@@ -28,5 +28,6 @@ for s in financial-statement-analysis taiwan-hidden-champion-radar taiwan-home-b
 for s in alternative-solution-designer frontend-design mcp-http-diagnostics problem-decomposer spec-organizer vibe-coding-guidelines; do copy_skill 09-software-problem-solving "$s"; done
 for s in video-editing-setup video-editor video-presentation video-short video-short-editor video-social video-subtitle video-travel video-tutorial; do copy_skill 10-video-media "$s"; done
 
+python3 "$repo_root/scripts/generate-skill-readmes.py"
 "$repo_root/scripts/validate-backup.sh"
 echo "Export complete. Review changes before committing."

@@ -1,0 +1,31 @@
+# Skill Optimizer
+
+在使用者要用 benchmark、rollout、held-out validation、bounded edits 或 SkillOpt 式流程系統化優化既有 skill 時使用。輸出可重跑的 optimization plan、eval split、候選修改、gate 結果與採納/回退決策；不適用於從零建立 skill、沒有評分資料的失敗事後檢討，或直接微調模型權重。
+
+## 基本資料
+
+- Skill ID：`allanyiin-skill-optimizer`
+- 分類：`01-skill-management`
+- 版本：`未標示`
+- 主要指令：[SKILL.md](SKILL.md)
+
+## 快速使用
+
+在支援 Skills 的環境中，可以直接描述任務；若要明確指定，可使用：
+
+```text
+$allanyiin-skill-optimizer 請依我的目標與現有資料完成任務，並列出需要我確認的事項。
+```
+
+建議一併提供目標、使用情境、已知資料、限制條件，以及希望取得的成果格式。若資料不足，Skill 會依核心指令只詢問真正影響結果的問題。
+
+## 內容結構
+
+- `SKILL.md`：AI 執行此能力時採用的核心指令
+- `agents/`：介面顯示與觸發設定（1 個檔案）
+- `references/`：按需求載入的參考資料（4 個檔案）
+- `assets/`：產出時可使用的素材或範本（2 個檔案）
+
+## 維護說明
+
+本 README 供人員瀏覽、搜尋與版本管理；真正影響 AI 行為的是 `SKILL.md` 及其引用的資源。修改功能時，應優先更新核心指令，再重新檢查本說明是否仍一致。

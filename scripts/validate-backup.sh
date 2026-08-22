@@ -9,6 +9,10 @@ find "$repo_root/skills" -mindepth 2 -maxdepth 2 -type d -print0 |
       echo "Missing SKILL.md: $skill_dir" >&2
       exit 1
     }
+    test -f "$skill_dir/README.md" || {
+      echo "Missing README.md: $skill_dir" >&2
+      exit 1
+    }
   done
 
 if find "$repo_root" -type f \( -name '.env*' -o -name '*.pem' -o -name '*.key' -o -iname '*credentials*' \) -print -quit | grep -q .; then

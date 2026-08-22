@@ -1,6 +1,6 @@
 # Justin 的私人 AI Skills 備份庫
 
-這個版本庫保存個人使用的 AI Skills。每個 Skill 都保留完整資料夾，包括 `SKILL.md`、`references/`、`scripts/`、`assets/`、測試案例與介面設定（若原 Skill 有提供）。
+這個版本庫保存個人使用的 AI Skills。每個 Skill 都有一份供人閱讀的繁體中文 `README.md`，並保留完整資料夾，包括 `SKILL.md`、`references/`、`scripts/`、`assets/`、測試案例與介面設定（若原 Skill 有提供）。
 
 ## 分類
 
@@ -33,4 +33,4 @@
 
 ## 更新備份
 
-`scripts/export-skills.sh` 會從本機個人 Skills 目錄重新匯出並清除 Python 快取；執行後請先查看差異、執行 `scripts/validate-backup.sh`，確認無敏感資訊再提交。
+`scripts/export-skills.sh` 會從本機個人 Skills 目錄重新匯出、清除 Python 快取，並替每個 Skill 更新 `README.md`；執行後請先查看差異、執行 `scripts/validate-backup.sh`，確認無敏感資訊再提交。
