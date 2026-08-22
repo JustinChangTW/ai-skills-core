@@ -3,6 +3,14 @@ set -euo pipefail
 
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
+find "$repo_root/skills" -mindepth 1 -maxdepth 1 -type d -print0 |
+  while IFS= read -r -d '' category_dir; do
+    test -f "$category_dir/README.md" || {
+      echo "Missing category README.md: $category_dir" >&2
+      exit 1
+    }
+  done
+
 find "$repo_root/skills" -mindepth 2 -maxdepth 2 -type d -print0 |
   while IFS= read -r -d '' skill_dir; do
     test -f "$skill_dir/SKILL.md" || {

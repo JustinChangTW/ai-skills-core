@@ -1,9 +1,10 @@
 a22c5d970104f6477635cd6478b4ea915b99963962320bc5bae319dc4aa9e4b3  ./.gitignore
 008c5ea188c7d54a0e906c5f0d6b9135a3d619454942717b9612a438b6682bad  ./CATALOG.md
-c7e0a1f7c0df77eb1044a3274a52b826966286afd0f9929c4a0ef4a8710719ec  ./README.md
+6e15e9557ac2274d7a32f8209205588d674ab2ab2fccf1aa46855237f0a36788  ./README.md
 ec8352d1d5b98185ccba1e2047f918c12eb827baeb3e29711441a7ff7fe53455  ./scripts/export-skills.sh
-b1200ad94a76e5c58272634d38d44dd0248aaaad2bf0de3aa624d04624de097f  ./scripts/generate-skill-readmes.py
-4e6a0db8432ae5f6c7b347013fca7effd89474a9c62b41283cfaa3806988ba69  ./scripts/validate-backup.sh
+72b6914a056d692b11a4badb801c4b277be2c664eb639e2f83789ac4a6c74465  ./scripts/generate-skill-readmes.py
+4af0b25c4dbfa64786758dddb4a206dbd5c7a715676d7914469353dd60230b13  ./scripts/validate-backup.sh
+e7e534d0a4d19647a50b56c1e825eef872ad3df84d94898b3d6479dda60c806e  ./skills/01-skill-management/README.md
 1cada71d5ccee9972dc17947b296b9fcac92ae2e37ac516fb217166cb64281c6  ./skills/01-skill-management/allanyiin-skill-creator-advanced/.clawhubignore
 1cada71d5ccee9972dc17947b296b9fcac92ae2e37ac516fb217166cb64281c6  ./skills/01-skill-management/allanyiin-skill-creator-advanced/.skillignore
 5ca2920d4f56954100c8f365461aba7b6c6154da49734f7b2703d9275ad49d11  ./skills/01-skill-management/allanyiin-skill-creator-advanced/LICENSE.txt
@@ -161,6 +162,7 @@ a01fbc4eefb567e4108b7915df79e0e8c88884ac394c4711a93a864c5508bca4  ./skills/01-sk
 0917d930e8eecea5590789208a0ad124cd30865e2173a8183c05ae4b1f8a662a  ./skills/01-skill-management/capability-evolver/references/evolution-loop.md
 7adab9238e330ede8850fe604c5ae174d3ea2f8f01a21edb848f9653ea7aa366  ./skills/01-skill-management/capability-evolver/references/scoring-rubric.md
 b3f00ee3c280cb664abdb947683d7888908ee8c26a42e55d5e674bfc7d1675a7  ./skills/01-skill-management/capability-evolver/references/security-review.md
+433dc317c7439625fbe4f9cbdd995db73ecad2d8cc1811bae22b2b49a08d28ac  ./skills/02-cybersecurity/README.md
 78c046547b191f179f2ba6869ccec724b1a96f207133f4e0eb5964bb044ab8e1  ./skills/02-cybersecurity/dark-web-intelligence-analysis/README.md
 2858432fb028803c93b98b2a86e0363d17475bdea6c629ece48f317f8e8fcc50  ./skills/02-cybersecurity/dark-web-intelligence-analysis/SKILL.md
 fa81f4f7a32e7ac0649054f54abf2999a469e1857e6aeebc9c72b67e290908bd  ./skills/02-cybersecurity/dark-web-intelligence-analysis/agents/openai.yaml
@@ -201,6 +203,7 @@ e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b  ./skills/02-cy
 473e4daa8285a863c8e2c121a7dad751c7cb362c7732087a08583751a8a98410  ./skills/02-cybersecurity/taiwan-isms-audit-expert/references/official-sources.md
 141ed1c686879b0cfef0c9c4f32d76e856c73d0b89dc9ae3add82a5263a4da38  ./skills/02-cybersecurity/taiwan-isms-audit-expert/references/output-templates.md
 25736d8afe826d4b626aff64e7b42014a461d865a451d796c30320f3c009f1fe  ./skills/02-cybersecurity/taiwan-isms-audit-expert/references/taiwan-financial-audit.md
+ab3dae1794c0a719b4c8e30d3408f6d2c49d9a14e6368d9d6cdfd40ffbc324d9  ./skills/03-research-knowledge/README.md
 e9071f3057953c9287f2b24ab21fe6c7c1f6f5fe3d5131ae60883b426f0b7215  ./skills/03-research-knowledge/arxiv-research/README.md
 649dfc3c15871d64137630831c497467766a70c6b9e004a78f42a2592074ebed  ./skills/03-research-knowledge/arxiv-research/SKILL.md
 75becd1993f8b7b83ec681fc41cb1a76b6d898860e7301b62fab20d3e34c4c65  ./skills/03-research-knowledge/arxiv-research/agents/openai.yaml
@@ -341,6 +344,7 @@ aace341316e30dcd7caf88c11508fbd4ef3c02c93d2fa77e05aa2e87dc85a757  ./skills/03-re
 b558726eb6b7e60f6c86ca9cfae4b8ab0174aa4784133b3fa3b45211090f5176  ./skills/03-research-knowledge/textbook-to-md/scripts/project/converter/test_table_fixes.py
 97936697d11771fba6585fa257a18e88c897b7dc51ce12dcc7218e9627c887f3  ./skills/03-research-knowledge/textbook-to-md/scripts/project/converter/test_table_merge.py
 5df21bd64af4b205abbccc08d915406ca6413041e5469fd6842b58b7be6809e5  ./skills/03-research-knowledge/textbook-to-md/scripts/project/shared/config.py
+55cca39060661ca59a143a699626fc7e48ceb08e6c75b6c2152f55e7d0d12715  ./skills/04-speaking-communication/README.md
 eea3766777bf9540570caa041f0b7be6550b511ae7a75e98b624db66df40edc8  ./skills/04-speaking-communication/ethical-persuasion-strategy/README.md
 2dd18ca52f448bb9da130043fdcc515a9b09cd82cc3c59437dcb71a20c2ffa66  ./skills/04-speaking-communication/ethical-persuasion-strategy/SKILL.md
 a8a6dbd48b1d289a2aa301c43d803f7a5f4bcc1854d627a7aa93cce9527db6ee  ./skills/04-speaking-communication/ethical-persuasion-strategy/agents/openai.yaml
@@ -379,6 +383,7 @@ ed3ec5aa1ba6f23a38838a7759564866c24bef5e214c37c3cc83bb70b3707e01  ./skills/04-sp
 adc9b913572067271c6c0125a1d3484eead98b944bc75fba658a03c68edc6438  ./skills/04-speaking-communication/oral-expression-coach/references/scenario-playbooks.md
 9ad7bf74a29443ba27e783add296d68123398d82dab02480e4ab71b7384db2da  ./skills/04-speaking-communication/oral-expression-coach/references/speaking-frameworks.md
 dddce4b3d62591215cffdff6b708225174bba82d29143c2009ff0edc89a96c69  ./skills/04-speaking-communication/oral-expression-coach/skill_lifecycle.yaml
+cf6a7581a89948d2d79fbcf98aacb16c78628d2e0682e1d7373112386a17a9cf  ./skills/05-taipei-tm/README.md
 b7cd7027afcd107ce98e2335c0faba08e9f34ef3fb9ea7e6f7c57d7bb7ad0c36  ./skills/05-taipei-tm/barnum-speech/README.md
 9383b8b5af2b8ba37cf38589e6a1157d44c1a073aff274bcc852a5e680c86aee  ./skills/05-taipei-tm/barnum-speech/SKILL.md
 34d12947172281d63c18bc6970008268c43643d4378dd5b25d8ca17503dbe9ba  ./skills/05-taipei-tm/barnum-speech/agents/openai.yaml
@@ -508,6 +513,7 @@ b35ff9d7291e4709978b826b4ad1656e6999a1b6cd0bacabc40e099ce0afc756  ./skills/05-ta
 95183956de84a0cfcef9c39ddfe7b8b88d0df252b63d74783c8a2dc20b59cd37  ./skills/05-taipei-tm/taipei-tm-timer-ops/schemas/run_trace.schema.json
 7322fc3289212017d48812eb5f989aeb1b437f2ed7555ce11d9a49ad99105ecb  ./skills/05-taipei-tm/taipei-tm-timer-ops/schemas/skill_spec.schema.json
 c6b1a95def2ce7dae007ea3b5d08f625bc167aa185c9850fcee53e52761dfba8  ./skills/05-taipei-tm/taipei-tm-timer-ops/skill_lifecycle.yaml
+760bc22200c727ec1549b02e85242ca45b0e744044d44439555ba7112834d271  ./skills/06-writing-editing/README.md
 e8cd14d00a30992e7b8319b1438aa86360ef83dac6b86750ee7b5d6ebb0e4b56  ./skills/06-writing-editing/harm-aware-editor/README.md
 c730248020a97c3fc714d6d9453d1cdc137c4fc0de8934e72c42c3e96459d707  ./skills/06-writing-editing/harm-aware-editor/SKILL.md
 824bed6f65dd5c81e94875b97b2893c043a441e2b2e7bdb3690cf9e655da6a16  ./skills/06-writing-editing/harm-aware-editor/agents/openai.yaml
@@ -585,6 +591,7 @@ a43cb952dae82dad1f0f94882ebf2dd10e26b1be723aa19560ce5ec436f17ca8  ./skills/06-wr
 3b1d67ada7eca4330340cb5b5f10ff70ca06926161f45db97b365f4ca70406a6  ./skills/06-writing-editing/technical-documentation-writer/references/source-synthesis.md
 de4c9df095809efa73b5e7692f6a02cf3e9540ce91a8d6c45273a7483ee6c7b9  ./skills/06-writing-editing/technical-documentation-writer/references/test_plan.md
 c36fa10524832865cf5e6af34b5c36e70c5cde5d1bd862da82a82adf0ca0e499  ./skills/06-writing-editing/technical-documentation-writer/scripts/doc_quality_audit.py
+9588509cca6336a94fa3ea181d8e683263146acc42e8b02fb3a6314e1c7f655e  ./skills/07-presentations-visual/README.md
 bcb383a58dd680bd46e7732d29262b12bb4b65894af3ebf6ec9d8ffec7d71c0f  ./skills/07-presentations-visual/blender-control/README.md
 fee2306655242d41a7b657c764d5ef0c38a32908d4b8371c88d7aef18e1a4e0c  ./skills/07-presentations-visual/blender-control/SKILL.md
 4144894392f878d2347ebef28d9a25bce5f2f0d6c84f097b639d131024633896  ./skills/07-presentations-visual/blender-control/agents/openai.yaml
@@ -670,6 +677,7 @@ f33e8e991e78f7fd8cafd8e25322d2f794f338f87d5b30ffc8cbf187e66921bf  ./skills/07-pr
 0bae5385e7447da46647ed8d4cebdb1cf97788dff55236e2c960795a88983554  ./skills/07-presentations-visual/visual-presentation-production/references/alignment-and-manifest.md
 3dc82d9aecb08939788ca83ee007f285b9b047cb7b9c93c1a5d2fef9e1243716  ./skills/07-presentations-visual/visual-presentation-production/references/prompting-styles-and-qa.md
 e6faf5d6874d613abb4e586e5c59497bda64c96f038871f5f8c1c8d8483b4021  ./skills/07-presentations-visual/visual-presentation-production/scripts/assemble_visual_deck.py
+0c839e2068cace0017278b248fb7dbb8ea8c49d2dc90ab5c6089c84206a3aea4  ./skills/08-finance-property/README.md
 30a22fea0370aa3481d469c1c38a362d99c66d362ef767f280c6c3e8c31ff2e0  ./skills/08-finance-property/financial-statement-analysis/README.md
 2aa3bda792e4a1e76409ce282db3bba5a7fc7ebb08e21f309192b3425f1750c9  ./skills/08-finance-property/financial-statement-analysis/SKILL.md
 6109776b28e94e5a60333addf80b4f0b4c5ac7b806d73dc6be160b480c3403b3  ./skills/08-finance-property/financial-statement-analysis/agents/openai.yaml
@@ -706,6 +714,7 @@ f6d86d163ee6fa490913e569a14cb96dcbd077d0a12977594d860d4d2d13c0fa  ./skills/08-fi
 f244f4cfaeac5acf85f3fec70a98f9879545e7a2efdb40da65a300a8cb679163  ./skills/08-finance-property/taiwan-home-buying-guide/references/readiness_report.md
 c8f673c3088e75b8ee1868755fc00637200eda3f6302c3510833c820709c622e  ./skills/08-finance-property/taiwan-home-buying-guide/references/value-and-deal-finding.md
 af8bfda835f57435322db0903348ed1e2293130406314e9a30a739914c8d0bcc  ./skills/08-finance-property/taiwan-home-buying-guide/skill_lifecycle.yaml
+6ec2a7aa3d451ceac41680759d0699493e7ad381f46fd70501cbcb4c66e92079  ./skills/09-software-problem-solving/README.md
 7d5efeb0d4690923eca21f8b37cf746f126c561674fd8e63e3a572c9b906b209  ./skills/09-software-problem-solving/alternative-solution-designer/README.md
 28f03dc1d59040c3551641576049869c96031beaabbbaeaf75f79fee1f4ce1f8  ./skills/09-software-problem-solving/alternative-solution-designer/SKILL.md
 b49c217e3154955cd475745e70757cab8b3e9d19734ca09dd3cf61fa51424635  ./skills/09-software-problem-solving/alternative-solution-designer/agents/openai.yaml
@@ -793,6 +802,7 @@ a33a618a8c10ea8c18b8cda1ccd31e096e4b5a390da5906404a74db519844532  ./skills/09-so
 d4c16823262f79ecc501b02f7fcf28413ca68c4979d66645a17fdcb6f1774160  ./skills/09-software-problem-solving/vibe-coding-guidelines/scripts/project_launcher.py
 ec39f5a5ae5db413420dbcfa839d10d2662d51b0491ec146212892089fec19ee  ./skills/09-software-problem-solving/vibe-coding-guidelines/scripts/project_launcher_linux.py
 4f68ba2d62ab536acf41f36cfdab2c3c87d018f5662374379f30dd22b4a9e41c  ./skills/09-software-problem-solving/vibe-coding-guidelines/scripts/project_launcher_posix.py
+53ba7d8a26e6ecd7752acf021b934e09abf4f428a1388c287aeda2dccebee7f1  ./skills/10-video-media/README.md
 29b3d233f912eb516b3e1c20e14d6d60900550dcfa62dc621370d26af30bcff0  ./skills/10-video-media/video-editing-setup/README.md
 bfc5099bd389c3cad03c5d2a102fd66b04084a2488f02075a4e6dca7fff68145  ./skills/10-video-media/video-editing-setup/SKILL.md
 d868270a72a1d1014ad4316e31bd57d8deef0d6604ee08ec22ae2038efc2da8a  ./skills/10-video-media/video-editing-setup/agents/openai.yaml
