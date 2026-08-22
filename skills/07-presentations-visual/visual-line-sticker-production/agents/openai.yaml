@@ -1,0 +1,12 @@
+interface:
+  display_name: LINE Sticker Production
+  short_description: Guide, generate, and validate LINE static sticker sets
+  default_prompt: Use $visual-line-sticker-production to create an upload-ready LINE
+    static sticker set with customizable style, text, and character reuse.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

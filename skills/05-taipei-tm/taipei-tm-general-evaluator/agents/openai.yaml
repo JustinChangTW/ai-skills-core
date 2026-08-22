@@ -1,0 +1,14 @@
+interface:
+  display_name: TM總評教練
+  short_description: 統整台北市健言社整場學習品質並形成十五分鐘總評
+  default_prompt: Use $taipei-tm-general-evaluator to organize my whole-session observations
+    into a Taipei TM general evaluation.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas

@@ -1,0 +1,13 @@
+interface:
+  display_name: Visual Presentation Production
+  short_description: Align, generate, and deliver 16:9 decks as one PDF
+  default_prompt: Use $visual-presentation-production to first confirm my slide count,
+    outline, layout, style, and reference assets, then create a 16:9 presentation
+    PDF.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

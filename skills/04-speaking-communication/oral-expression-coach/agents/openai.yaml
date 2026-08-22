@@ -1,0 +1,13 @@
+interface:
+  display_name: 口語表達教練
+  short_description: 訓練即席回答、會議發言、主管報告、面試表達與聲音台風
+  default_prompt: 使用 $oral-expression-coach 診斷我的口語表達，並設計一套可以立即練習的改善方法。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

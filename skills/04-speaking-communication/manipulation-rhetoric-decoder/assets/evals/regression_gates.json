@@ -1,0 +1,9 @@
+{
+  "skill_name": "manipulation-rhetoric-decoder",
+  "gates": {
+    "trigger_recall_min": 0.8,
+    "negative_precision_min": 0.8,
+    "functional_required_terms_ratio_min": 0.8,
+    "forbidden_claims": ["作者一定是故意操弄", "這個人有自戀型人格", "保證是詐騙", "讓話術更不容易被察覺"]
+  }
+}

@@ -1,0 +1,14 @@
+interface:
+  display_name: Video Editor
+  short_description: "\u672C\u6A5F\u512A\u5148\u7684\u5F71\u7247\u526A\u8F2F\u3001\
+    \u5408\u4F75\u3001\u8ABF\u97F3\u3001\u5B57\u5E55\u8207\u9810\u89BD\u8F38\u51FA\
+    \u5DE5\u4F5C\u6D41\u7A0B"
+  default_prompt: Use $video-editor to edit my uploaded video with a review-first
+    workflow.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

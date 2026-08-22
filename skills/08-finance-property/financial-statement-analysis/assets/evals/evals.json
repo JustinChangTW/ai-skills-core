@@ -1,0 +1,222 @@
+{
+  "skill_name": "financial-statement-analysis",
+  "evals": [
+    {
+      "id": 1,
+      "name": "zh-single-company-10k-interpretation",
+      "type": "should_trigger",
+      "language": "zh",
+      "prompt": "我上傳了一份公司的 10-K，請幫我解讀財報，重點看現金流、負債跟盈餘品質，不要只是摘要。",
+      "expected_output": "回覆會先交代分析範圍與會計口徑，再整理核心發現、淨利到 CFO 的橋接、負債與資本支出的一致性，以及需要注意的風險紅旗。",
+      "files": [],
+      "expectations": [
+        "回覆包含 `## 財報解讀` 與五個固定 `###` 標題。",
+        "回覆會先交代會計口徑或資料範圍，不會直接先列比率。",
+        "回覆包含淨利到 CFO 的橋接或明確說明無法橋接的原因。",
+        "回覆會區分已確認事實、推論與待確認事項。"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "en-annual-report-earnings-quality",
+      "type": "should_trigger",
+      "language": "en",
+      "prompt": "Please analyze this annual report and tell me whether the company's earnings quality is improving or deteriorating. Focus on the cash flow statement, leverage, and any red flags in the notes.",
+      "expected_output": "The answer explains scope and accounting basis first, then walks through the three-statement bridge, key ratios, and note-driven red flags without turning into a trading recommendation.",
+      "files": [],
+      "expectations": [
+        "The output uses the financial-analysis structure rather than a generic summary.",
+        "The answer checks cash conversion and leverage instead of only repeating headline ratios.",
+        "The answer references notes, filings, or accounting-policy issues when relevant."
+      ]
+    },
+    {
+      "id": 3,
+      "name": "mixed-10q-cash-flow-divergence",
+      "type": "should_trigger",
+      "language": "mixed",
+      "prompt": "幫我看這份 10-Q，net income 看起來不錯，但 operating cash flow 很弱。我想知道是不是 working capital 或 one-off items 在撐表面數字。",
+      "expected_output": "回覆會聚焦淨利到 CFO 的橋接，檢查 working capital、一次性項目與附註，並說明這些因素如何影響盈餘品質判斷。",
+      "files": [],
+      "expectations": [
+        "回覆會檢查營運資金變動而不是只講 profit margin。",
+        "回覆會把 one-off items 與本業表現分開。",
+        "回覆不會跳成即時買賣建議。"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "zh-ifrs-usgaap-peer-comparison",
+      "type": "should_trigger",
+      "language": "zh",
+      "prompt": "請比較兩家同業公司的財報體質，一家用 IFRS、一家用 US GAAP，重點看獲利品質、現金流和槓桿。不要把制度差異直接當成體質差異。",
+      "expected_output": "回覆會先說明比較範圍與可比性風險，再做三表與比率比較，並清楚指出哪些差異可能只是會計分類或衡量差異。",
+      "files": [],
+      "expectations": [
+        "回覆會明確標示 IFRS / US GAAP 可比性風險。",
+        "回覆不會把現金流分類或研發資本化差異直接寫成經營優劣。",
+        "回覆會在比較前先說明口徑。"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "en-red-flag-receivables-inventory",
+      "type": "should_trigger",
+      "language": "en",
+      "prompt": "This company has posted three years of profit growth, but accounts receivable and inventory keep rising faster than revenue. Read the filings like a forensic analyst and tell me what financial-statement red flags deserve follow-up.",
+      "expected_output": "The answer highlights working-capital stress, cash conversion concerns, plausible alternative explanations, and which notes or disclosures need follow-up.",
+      "files": [],
+      "expectations": [
+        "The answer treats red flags as risk signals, not proof of fraud.",
+        "The answer explicitly checks receivables, inventory, and cash conversion.",
+        "The answer lists note-level follow-up questions."
+      ]
+    },
+    {
+      "id": 6,
+      "name": "mixed-notes-three-statements-quarterly",
+      "type": "should_trigger",
+      "language": "mixed",
+      "prompt": "請根據這份 quarterly filing 幫我做財報體檢，尤其看 notes 裡的 lease liabilities、impairment 跟 capex 對三表的影響。",
+      "expected_output": "回覆會先確認期間與會計基礎，再連動 notes、cash flow statement 和 balance sheet，解釋租賃、減損與資本支出如何改寫財報判讀。",
+      "files": [],
+      "expectations": [
+        "回覆會把 notes 和三表串起來，而不是各講各的。",
+        "回覆會點出租賃或減損對現金流與資產負債表的影響。",
+        "回覆保持財報解讀，不退化成文件翻譯。"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "zh-quarterly-debt-dividend-capex",
+      "type": "should_trigger",
+      "language": "zh",
+      "prompt": "我想知道這家公司這一季的舉債、股利和資本支出到底有沒有互相對得起來。請用財報角度幫我看三表有沒有矛盾。",
+      "expected_output": "回覆會檢查借款、股利、Capex 與權益變動是否能在三表之間對上，並標示若只能靠其他項目勉強平衡的風險。",
+      "files": [],
+      "expectations": [
+        "回覆會交代借款、股利與 Capex 的三表連動。",
+        "回覆會標示無法對帳或需要追查的部分。",
+        "回覆不會只列單張報表數字。"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "en-filing-based-health-check",
+      "type": "should_trigger",
+      "language": "en",
+      "prompt": "Use the filing, not news articles, to assess the company's financial health. I care about statement quality, debt pressure, and whether the balance sheet supports the earnings story.",
+      "expected_output": "The answer prioritizes filings and notes, then explains whether the balance sheet and cash flow statement support the earnings narrative.",
+      "files": [],
+      "expectations": [
+        "The answer prioritizes filings over secondary summaries.",
+        "The answer checks whether the balance sheet supports the earnings story.",
+        "The answer stays within financial-statement analysis rather than industry-news commentary."
+      ]
+    },
+    {
+      "id": 9,
+      "name": "zh-real-time-trading-call-should-not-trigger",
+      "type": "should_not_trigger",
+      "language": "zh",
+      "prompt": "今天這支股票到底能不能買？順便看一下現在股價和短線走勢。",
+      "expected_output": "此 skill 不應誤觸發完整財報解讀流程；若被測到，至少不應假裝財報分析足以支撐即時交易建議。",
+      "files": [],
+      "expectations": [
+        "不應把短線交易與即時股價問題誤判成財報解讀任務。",
+        "不應在沒有財報分析上下文時硬套 `## 財報解讀` 模板。"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "en-page-citation-extraction-should-not-trigger",
+      "type": "should_not_trigger",
+      "language": "en",
+      "prompt": "Read this 10-K and list every footnote page that mentions revenue recognition, lease obligations, or goodwill impairment, with page citations only.",
+      "expected_output": "This should route to evidence extraction rather than full financial-statement interpretation.",
+      "files": [],
+      "expectations": [
+        "It should not default to a full financial-analysis workflow.",
+        "It should recognize that the user wants page-level evidence extraction."
+      ]
+    },
+    {
+      "id": 11,
+      "name": "mixed-translation-task-should-not-trigger",
+      "type": "should_not_trigger",
+      "language": "mixed",
+      "prompt": "請把這份 annual report 的 management discussion 翻成繁體中文，保留原意就好，不需要分析。",
+      "expected_output": "This is a translation / rewriting task, not financial-statement analysis.",
+      "files": [],
+      "expectations": [
+        "不應把純翻譯任務誤判成財報解讀。",
+        "不應硬套三表橋接與紅旗分析模板。"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "zh-concept-alignment-ifrs-vs-usgaap-should-not-trigger",
+      "type": "should_not_trigger",
+      "language": "zh",
+      "prompt": "先幫我整理 IFRS 跟 US GAAP 在存貨、現金流分類、研發資本化上的差異，我先做概念對齊，先不要分析任何公司。",
+      "expected_output": "This should route to concept alignment because the user wants background knowledge before any company-specific analysis.",
+      "files": [],
+      "expectations": [
+        "不應誤把純制度背景整理當成公司財報解讀。",
+        "應辨識這是前置背景研究任務。"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "en-industry-news-research-should-not-trigger",
+      "type": "should_not_trigger",
+      "language": "en",
+      "prompt": "Research what has happened in the semiconductor industry over the last six months before we look at any company filings.",
+      "expected_output": "This is an industry/background research task, not financial-statement analysis.",
+      "files": [],
+      "expectations": [
+        "It should not trigger full filing analysis when no filings are involved.",
+        "It should recognize the user wants background research first."
+      ]
+    },
+    {
+      "id": 14,
+      "name": "mixed-board-memo-writing-should-not-trigger",
+      "type": "should_not_trigger",
+      "language": "mixed",
+      "prompt": "我已經有分析重點了，請幫我寫一份 board memo，讓主管 3 分鐘看懂這家公司財務狀況。",
+      "expected_output": "This should route to a writing or documentation skill rather than re-running the financial analysis workflow.",
+      "files": [],
+      "expectations": [
+        "不應把既有分析改寫成 memo 的任務誤判成再做一次財報解讀。",
+        "應辨識這是輸出整理任務。"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "zh-market-size-estimation-should-not-trigger",
+      "type": "should_not_trigger",
+      "language": "zh",
+      "prompt": "幫我粗估這家公司所在市場的 TAM 有多大，不一定要用財報，主要想做市場規模估算。",
+      "expected_output": "This is a market-sizing / estimation task, not financial-statement interpretation.",
+      "files": [],
+      "expectations": [
+        "不應把市場規模粗估誤判成財報解讀。",
+        "不應因為出現公司字眼就強行啟動財報流程。"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "en-short-summary-with-citations-should-not-trigger",
+      "type": "should_not_trigger",
+      "language": "en",
+      "prompt": "Give me a concise summary of this annual report with section citations. I do not need ratio analysis or any interpretation, just a faithful summary.",
+      "expected_output": "This should route to document reading/summarization rather than financial-statement analysis.",
+      "files": [],
+      "expectations": [
+        "It should not insist on ratio analysis when the user explicitly excludes interpretation.",
+        "It should recognize the summarization-only boundary."
+      ]
+    }
+  ]
+}

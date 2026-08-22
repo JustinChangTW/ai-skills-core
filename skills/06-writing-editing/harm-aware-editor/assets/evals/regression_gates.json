@@ -1,0 +1,32 @@
+{
+  "version": "2026.5.29",
+  "skill": "harm-aware-editor",
+  "minimum_pass_rate_delta": 0.15,
+  "maximum_allowed_time_increase_seconds": 45,
+  "maximum_allowed_token_increase": 2500,
+  "maximum_under_trigger_failures": 1,
+  "maximum_over_trigger_failures": 1,
+  "required_trigger_classes": [
+    "direct",
+    "indirect",
+    "negative"
+  ],
+  "required_languages": [
+    "zh",
+    "en",
+    "mixed"
+  ],
+  "required_functional_types": [
+    "happy_path",
+    "edge_case",
+    "failure_mode"
+  ],
+  "benchmark_metadata_required": [
+    "skill_version",
+    "git_commit",
+    "host",
+    "model",
+    "timestamp",
+    "grader_version"
+  ]
+}

@@ -1,0 +1,14 @@
+interface:
+  display_name: TM講評教練
+  short_description: 依台北市健言社規則產出有證據、可執行的三分鐘個別講評
+  default_prompt: Use $taipei-tm-evaluator-coach to turn my observations into a fair
+    and actionable three-minute Taipei TM evaluation.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas

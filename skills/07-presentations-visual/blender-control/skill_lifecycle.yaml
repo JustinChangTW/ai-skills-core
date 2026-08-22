@@ -1,0 +1,58 @@
+name: blender-control
+status: draft
+owner: "Allan Yiin"
+archetype: executor
+primary_structure_pattern: pipeline+tool-wrapper
+lifecycle:
+  created_at: 2026-06-14
+  last_validated_at: 2026-06-14
+  last_released_at: null
+  review_interval_days: 60
+  next_review_due: 2026-08-13
+support:
+  primary_hosts:
+    - agent-skills
+    - codex
+    - openclaw
+  secondary_hosts:
+    - claude-code
+    - generic-llm-agent
+  unsupported_hosts:
+    - pure-classifier-only-hosts
+risk:
+  external_side_effects: true
+  requires_secrets: false
+  data_sensitivity: medium
+dependencies:
+  scripts: []
+  references:
+    - references/operation-playbook.md
+    - references/source-map.md
+    - references/migration-governance.md
+    - references/readiness_report.md
+stewardship:
+  reviewers:
+    - skill-owner
+    - blender-domain-reviewer
+  stale_after_days: 120
+  escalation:
+    stale: needs-maintenance
+    no_owner: orphaned
+portfolio:
+  overlaps_with:
+    - image-generation
+    - frontend-design
+    - tutorial-video-maker
+    - technical-documentation-writer
+    - skill-creator-advanced
+  hands_off_to:
+    - image-generation
+    - frontend-design
+    - tutorial-video-maker
+    - technical-documentation-writer
+    - skill-creator-advanced
+  depends_on: []
+  supersedes: []
+  deprecated_by: null
+  shares_tool_contract_with:
+    - blender-mcp

@@ -1,0 +1,13 @@
+interface:
+  display_name: 臺灣買房攻略
+  short_description: 台灣自住買方的找房、估價、議價、貸款與風險查核助手
+  default_prompt: 使用 $taiwan-home-buying-guide 分析這間房是否值得買，並估算合理價、貸款與風險。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

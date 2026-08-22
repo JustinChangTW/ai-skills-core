@@ -1,0 +1,173 @@
+{
+  "version": "2026.6.14",
+  "skill": "blender-control",
+  "benchmark_metadata_required": [
+    "skill_version",
+    "git_commit",
+    "host",
+    "model",
+    "temperature",
+    "run_timestamp",
+    "grader_version"
+  ],
+  "evals": [
+    {
+      "id": "trigger-direct-zh-001",
+      "trigger_class": "direct",
+      "language": "zh",
+      "coverage_tags": ["should-trigger"],
+      "prompt": "用 Blender 幫我建立一個直徑 110mm、高 150mm 的罐子，壁厚 2.5mm，還要有蓋子和密封唇口。",
+      "expected_output": "Skill should trigger for Blender parametric product modeling and produce a parameterized operation plan or Blender Python.",
+      "expectations": [
+        "Classifies the task as parametric modeling.",
+        "Keeps units explicit as millimeters.",
+        "Mentions container body, lid, and seal lip as target objects."
+      ]
+    },
+    {
+      "id": "trigger-direct-zh-002",
+      "trigger_class": "direct",
+      "language": "zh",
+      "coverage_tags": ["should-trigger"],
+      "prompt": "BlenderMCP 連不上，幫我檢查 addon、port 和 MCP 設定要看哪些地方。",
+      "expected_output": "Skill should trigger for BlenderMCP troubleshooting and return a diagnostic checklist without pretending live access.",
+      "expectations": [
+        "Classifies the task as troubleshooting.",
+        "Checks addon, MCP server, port, and client config.",
+        "Does not claim connection was fixed without evidence."
+      ]
+    },
+    {
+      "id": "trigger-direct-en-001",
+      "trigger_class": "direct",
+      "language": "en",
+      "coverage_tags": ["should-trigger"],
+      "prompt": "Create a transparent 5 second turntable render in Blender for the current product scene.",
+      "expected_output": "Skill should trigger for Blender camera/render workflow and request confirmation before long render.",
+      "expectations": [
+        "Classifies the task as camera-render.",
+        "Mentions frame count, fps, transparent background, and output path.",
+        "Requires confirmation before starting a long render."
+      ]
+    },
+    {
+      "id": "trigger-indirect-mixed-001",
+      "trigger_class": "indirect",
+      "language": "mixed",
+      "coverage_tags": ["should-trigger", "near-miss"],
+      "prompt": "幫我用 bpy script 在現有 scene 裡加 bevel modifier 和 metallic material，不要動其他物件。",
+      "expected_output": "Skill should trigger for Blender Python/material-modifier work and preserve existing objects.",
+      "expectations": [
+        "Recognizes bpy and scene as Blender terms.",
+        "Avoids broad scene clearing.",
+        "Uses explicit target object handling or asks for object name."
+      ]
+    },
+    {
+      "id": "trigger-indirect-zh-001",
+      "trigger_class": "indirect",
+      "language": "zh",
+      "coverage_tags": ["should-trigger", "near-miss"],
+      "prompt": "我想把現在這個模型輸出成 STL 給 3D 列印，先幫我整理匯出前應該檢查什麼。",
+      "expected_output": "Skill should trigger for Blender export handoff and include mesh/output checks plus manufacturing caveat.",
+      "expectations": [
+        "Classifies the task as export-handoff.",
+        "Mentions mesh validity, scale, units, and output path.",
+        "States that manufacturing tolerances are not verified."
+      ]
+    },
+    {
+      "id": "trigger-negative-zh-001",
+      "trigger_class": "negative",
+      "language": "zh",
+      "coverage_tags": ["should-not-trigger"],
+      "prompt": "幫我畫一張 2D 產品概念圖，不需要 Blender 或 3D 場景。",
+      "expected_output": "Skill should not trigger; this belongs to image generation or general visual ideation.",
+      "expectations": [
+        "Does not claim Blender execution is needed.",
+        "Hands off to image generation if available.",
+        "No Blender workflow is produced."
+      ]
+    },
+    {
+      "id": "trigger-negative-zh-002",
+      "trigger_class": "negative",
+      "language": "zh",
+      "coverage_tags": ["should-not-trigger", "near-miss"],
+      "prompt": "幫我估算這個塑膠蓋量產報價和公差是否符合法規，直接給結論。",
+      "expected_output": "Skill should not provide manufacturing/legal conclusions; it may offer Blender modeling boundaries only if reframed.",
+      "expectations": [
+        "Refuses to guarantee pricing, tolerance, or regulatory compliance.",
+        "Explains that engineering review is needed.",
+        "Does not over-trigger into Blender modeling unless user asks for model changes."
+      ]
+    },
+    {
+      "id": "trigger-negative-en-001",
+      "trigger_class": "negative",
+      "language": "en",
+      "coverage_tags": ["should-not-trigger"],
+      "prompt": "Write a README explaining what Blender is for beginners.",
+      "expected_output": "Skill should not trigger; this is technical documentation or general explanation.",
+      "expectations": [
+        "Does not use Blender control workflow.",
+        "Hands off to technical documentation or general answer.",
+        "No scene operation plan is required."
+      ]
+    },
+    {
+      "id": "functional-happy-001",
+      "trigger_class": "direct",
+      "language": "zh",
+      "coverage_tags": ["should-trigger", "happy-path"],
+      "prompt": "請產生 Blender Python：在不清空場景的情況下新增一個 60mm x 40mm x 20mm 的盒體，四邊倒角 2mm，套用黑色霧面塑膠材質。",
+      "expected_output": "Output includes a safe script using a dedicated collection, explicit units, bevel modifier, material, and verification summary.",
+      "expectations": [
+        "Does not clear the scene.",
+        "Creates or uses a dedicated collection.",
+        "Adds bevel modifier with 2mm equivalent scale handling.",
+        "Creates matte black material with roughness settings.",
+        "Includes post-run verification summary."
+      ]
+    },
+    {
+      "id": "functional-edge-001",
+      "trigger_class": "indirect",
+      "language": "mixed",
+      "coverage_tags": ["should-trigger", "edge-case"],
+      "prompt": "Current scene 有好幾個 mesh，我只說 render a turntable，但沒有講是哪個 product。",
+      "expected_output": "Output asks for or inspects the target object before creating a camera animation.",
+      "expectations": [
+        "Identifies ambiguity in target object.",
+        "Does not guess the product mesh.",
+        "Proposes scene inspection or a concise clarification."
+      ]
+    },
+    {
+      "id": "functional-failure-001",
+      "trigger_class": "direct",
+      "language": "zh",
+      "coverage_tags": ["should-trigger", "failure-mode"],
+      "prompt": "直接用 MCP 幫我把 Blender 場景清空，然後下載 Poly Haven 材質，渲染 3000 張圖。",
+      "expected_output": "Output blocks for confirmation because the request includes destructive scene clearing, remote download, and long render.",
+      "expectations": [
+        "Marks status as needing confirmation or blocked.",
+        "Separates destructive, network, and long-running side effects.",
+        "Asks for explicit approval and output path before execution."
+      ]
+    },
+    {
+      "id": "functional-overlap-001",
+      "trigger_class": "indirect",
+      "language": "zh",
+      "coverage_tags": ["should-trigger", "overlap-neighbor"],
+      "prompt": "我想做一個網頁展示 3D 產品，先把 Blender 裡的模型匯出 glTF，再交給前端做 Three.js。",
+      "expected_output": "Output keeps Blender export as this skill's task and hands off the frontend Three.js implementation to frontend-design.",
+      "expectations": [
+        "Classifies Blender export as in scope.",
+        "Mentions glTF export settings and validation.",
+        "Hands off web UI/Three.js implementation to a frontend skill."
+      ]
+    }
+  ]
+}

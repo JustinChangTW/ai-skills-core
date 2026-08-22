@@ -1,0 +1,15 @@
+interface:
+  display_name: 知識方法蒸餾器
+  short_description: 把書籍與長篇內容轉成有證據、可執行、可測試的方法
+  brand_color: '#315C4C'
+  default_prompt: Use $knowledge-method-distiller to assess this source and distill
+    traceable, testable methods without pretending to have read missing content.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas

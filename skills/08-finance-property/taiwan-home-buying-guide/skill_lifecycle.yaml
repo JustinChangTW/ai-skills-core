@@ -1,0 +1,55 @@
+name: taiwan-home-buying-guide
+status: draft
+owner: "Justin Chang"
+archetype: reviewer
+primary_structure_pattern: pipeline
+lifecycle:
+  created_at: 2026-08-11
+  last_validated_at: 2026-08-11
+  last_released_at: null
+  review_interval_days: 90
+  next_review_due: 2026-11-09
+support:
+  primary_hosts:
+    - chatgpt
+    - codex
+  secondary_hosts:
+    - agent-skills-compatible
+  unsupported_hosts:
+    - hosts-without-web-access-for-current-policy-claims
+risk:
+  external_side_effects: false
+  requires_secrets: false
+  data_sensitivity: high
+dependencies:
+  scripts: []
+  references:
+    - references/buyer-journey.md
+    - references/value-and-deal-finding.md
+    - references/mortgage-and-cash.md
+    - references/agent-and-negotiation.md
+    - references/due-diligence.md
+    - references/official-sources.md
+    - references/output-templates.md
+    - references/migration-governance.md
+    - references/readiness_report.md
+stewardship:
+  reviewers:
+    - skill-owner
+  stale_after_days: 180
+  escalation:
+    stale: needs-maintenance
+    no_owner: orphaned
+portfolio:
+  overlaps_with:
+    - financial-advice
+    - legal-document-review
+    - overseas-property-analysis
+  hands_off_to:
+    - financial-advice
+    - legal-document-review
+    - overseas-property-analysis
+  depends_on: []
+  supersedes: []
+  deprecated_by: null
+  shares_tool_contract_with: []

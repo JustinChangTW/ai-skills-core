@@ -1,0 +1,33 @@
+name: manipulation-rhetoric-decoder
+status: draft
+owner: "Justin Chang"
+archetype: reviewer
+primary_structure_pattern: pipeline
+lifecycle:
+  created_at: 2026-08-12
+  last_validated_at: 2026-08-12
+  last_released_at: null
+  review_interval_days: 90
+  next_review_due: 2026-11-10
+support:
+  primary_hosts: [chatgpt, codex]
+  secondary_hosts: [agent-skills-compatible]
+  unsupported_hosts: [hosts-without-web-access-for-current-claims]
+risk:
+  external_side_effects: false
+  requires_secrets: false
+  data_sensitivity: medium
+dependencies:
+  scripts: []
+  references: [references/manipulation-patterns.md, references/logic-and-evidence.md, references/scenario-playbooks.md, references/counter-scripts.md, references/output-templates.md, references/migration-governance.md, references/readiness_report.md]
+stewardship:
+  reviewers: [skill-owner]
+  stale_after_days: 180
+  escalation: {stale: needs-maintenance, no_owner: orphaned}
+portfolio:
+  overlaps_with: [ethical-persuasion-strategy, fact-checking, taiwan-home-buying-guide, humanize-text]
+  hands_off_to: [ethical-persuasion-strategy, fact-checking, taiwan-home-buying-guide, humanize-text]
+  depends_on: []
+  supersedes: []
+  deprecated_by: null
+  shares_tool_contract_with: []

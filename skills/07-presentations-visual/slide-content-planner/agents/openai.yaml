@@ -1,0 +1,14 @@
+interface:
+  display_name: 簡報總導演
+  short_description: 受眾對焦、故事線、逐頁視覺、講稿與問答一次規劃
+  default_prompt: Use $slide-content-planner to turn my material into an audience-focused
+    slide plan with speaker notes.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas

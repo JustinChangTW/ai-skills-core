@@ -1,0 +1,13 @@
+interface:
+  display_name: 操弄話術破解
+  short_description: 辨識巴納姆效應、情緒壓力、認知偏誤與邏輯操弄並提供破解回覆
+  default_prompt: 使用 $manipulation-rhetoric-decoder 分析這段內容是否含有操弄話術，並提供查證與破解方法。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

@@ -1,0 +1,78 @@
+{
+  "skill_name": "slide-content-planner",
+  "benchmark_metadata_required": ["skill_version", "git_commit", "host", "model", "temperature", "run_timestamp", "grader_version"],
+  "evals": [
+    {
+      "id": 1,
+      "name": "board-deck-zh",
+      "type": "functional",
+      "language": "zh",
+      "coverage_tags": ["should-trigger", "happy-path"],
+      "prompt": "把這份年度報告整理成 10 頁給董事會看的簡報，並補講稿。",
+      "expected_output": "董事會導向的精確 10 頁藍圖、講者稿與預想問答。",
+      "files": [],
+      "expectations": ["包含 GAP 對焦。", "逐頁規劃精確為 10 頁。", "包含講者稿與預想問答。"],
+      "trigger_class": "direct"
+    },
+    {
+      "id": 2,
+      "name": "fuge-style-mixed",
+      "type": "functional",
+      "language": "mixed",
+      "coverage_tags": ["should-trigger", "edge-case"],
+      "prompt": "請用福哥流的 GAP、rule of three 和 big text，規劃一份客戶提案 deck。",
+      "expected_output": "產出採用通用 GAP、三重點與大字流技巧的客戶提案藍圖，同時不冒充或宣稱完全重現特定講師。",
+      "files": [],
+      "expectations": ["包含 GAP 與核心結構。", "不宣稱完全模仿特定講師。", "包含逐頁視覺手法。"],
+      "trigger_class": "direct"
+    },
+    {
+      "id": 3,
+      "name": "english-pitch",
+      "type": "functional",
+      "language": "en",
+      "coverage_tags": ["should-trigger", "happy-path"],
+      "prompt": "Turn these notes into a 12-slide customer pitch with speaker notes and likely objections.",
+      "expected_output": "A 12-slide audience-focused plan with notes and objections.",
+      "files": [],
+      "expectations": ["Exactly 12 slides.", "Includes speaker notes.", "Includes likely objections."],
+      "trigger_class": "indirect"
+    },
+    {
+      "id": 4,
+      "name": "pptx-edit-neighbor",
+      "type": "trigger",
+      "language": "zh",
+      "coverage_tags": ["should-not-trigger", "overlap-neighbor", "near-miss"],
+      "prompt": "把這份 PPTX 的字全部改成 18pt，內容不要動。",
+      "expected_output": "辨識這是既有 PPTX 的格式修改，應交給投影片檔案編輯能力處理，且不啟動內容與故事線重規劃。",
+      "files": [],
+      "expectations": ["不重新規劃故事線。", "辨識為 PPTX 編輯。"],
+      "trigger_class": "negative"
+    },
+    {
+      "id": 5,
+      "name": "poster-negative",
+      "type": "trigger",
+      "language": "zh",
+      "coverage_tags": ["should-not-trigger", "failure-mode"],
+      "prompt": "我要宣傳下週末的夏日音樂會，請幫我做一張可以貼在社群上的直式活動海報。",
+      "expected_output": "辨識這是單張直式社群海報設計任務，不啟動簡報內容規劃，也不產出逐頁投影片藍圖。",
+      "files": [],
+      "expectations": ["辨識為單張海報任務。"],
+      "trigger_class": "negative"
+    },
+    {
+      "id": 6,
+      "name": "video-near-miss",
+      "type": "trigger",
+      "language": "mixed",
+      "coverage_tags": ["should-not-trigger", "near-miss", "overlap-neighbor"],
+      "prompt": "把現有簡報錄成 narrated teaching video，內容不修改。",
+      "expected_output": "辨識這是將既有簡報製成旁白教學影片的任務，交給簡報影片製作能力，不啟動投影片內容規劃。",
+      "files": [],
+      "expectations": ["不啟動內容規劃。", "辨識為影片製作。"],
+      "trigger_class": "negative"
+    }
+  ]
+}

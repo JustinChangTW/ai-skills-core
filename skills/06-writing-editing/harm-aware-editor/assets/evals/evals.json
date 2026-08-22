@@ -1,0 +1,172 @@
+{
+  "version": "2026.5.29",
+  "skill": "harm-aware-editor",
+  "benchmark_metadata_required": [
+    "skill_version",
+    "git_commit",
+    "host",
+    "model",
+    "temperature",
+    "run_timestamp",
+    "grader_version"
+  ],
+  "evals": [
+    {
+      "id": "trigger-direct-zh-001",
+      "trigger_class": "direct",
+      "language": "zh",
+      "coverage_tags": ["should-trigger"],
+      "prompt": "幫我檢查這段公告有沒有歧視、偏見或刻板印象，並提供改寫。",
+      "expected_output": "Skill should trigger and produce a risk summary plus rewritten version for inclusive-language review.",
+      "expectations": [
+        "Triggers the inclusive-language review workflow.",
+        "Requests or uses the text to be reviewed.",
+        "Mentions risk summary and rewrite as expected output."
+      ]
+    },
+    {
+      "id": "trigger-direct-zh-002",
+      "trigger_class": "direct",
+      "language": "zh",
+      "coverage_tags": ["should-trigger"],
+      "prompt": "把這段話改成比較創傷知情，不要讓受害者覺得被責怪。",
+      "expected_output": "Skill should trigger for trauma-informed rewriting and avoid victim-blaming language.",
+      "expectations": [
+        "Frames the task as trauma-informed rewriting.",
+        "Avoids diagnosing trauma or giving therapy advice.",
+        "Provides a safer rewrite when source text is available."
+      ]
+    },
+    {
+      "id": "trigger-direct-en-001",
+      "trigger_class": "direct",
+      "language": "en",
+      "coverage_tags": ["should-trigger"],
+      "prompt": "Review this copy for stigmatizing language and rewrite it in trauma-informed language.",
+      "expected_output": "Skill should trigger in English and return findings, rewrite, rationale, and caveats.",
+      "expectations": [
+        "Handles English inclusive-language trigger wording.",
+        "Identifies stigmatizing language risks.",
+        "Returns a rewrite with rationale."
+      ]
+    },
+    {
+      "id": "trigger-indirect-mixed-001",
+      "trigger_class": "indirect",
+      "language": "mixed",
+      "coverage_tags": ["should-trigger", "near-miss"],
+      "prompt": "技術文件裡的 blacklist/whitelist 和 master/slave 想換成 inclusive terms，但 API 不能壞。",
+      "expected_output": "Skill should trigger and preserve technical compatibility while suggesting inclusive alternatives.",
+      "expectations": [
+        "Recognizes inclusive technical terminology task.",
+        "Mentions compatibility and deprecation concerns.",
+        "Suggests alternatives such as allowlist/blocklist or primary/replica based on context."
+      ]
+    },
+    {
+      "id": "trigger-indirect-zh-001",
+      "trigger_class": "indirect",
+      "language": "zh",
+      "coverage_tags": ["should-trigger", "near-miss"],
+      "prompt": "這份客服話術可能會讓有心理傷口的人不舒服，幫我看問題在哪。",
+      "expected_output": "Skill should trigger for potential trauma-related harm in customer support wording.",
+      "expectations": [
+        "Treats psychological wound wording as trauma-informed communication.",
+        "Identifies potentially harmful phrasing.",
+        "Provides safer alternatives without overclaiming."
+      ]
+    },
+    {
+      "id": "trigger-negative-zh-001",
+      "trigger_class": "negative",
+      "language": "zh",
+      "coverage_tags": ["should-not-trigger"],
+      "prompt": "幫我把這篇產品介紹文章寫得更自然、更有人味，但不用特別做歧視或創傷風險審查。",
+      "expected_output": "Skill should not trigger; this is general humanization unless bias, stigma, or trauma risk is mentioned.",
+      "expectations": [
+        "Does not steal general polishing work from humanize-text.",
+        "No inclusive-language audit is required by the prompt.",
+        "Could hand off to a general rewriting skill."
+      ]
+    },
+    {
+      "id": "trigger-negative-zh-002",
+      "trigger_class": "negative",
+      "language": "zh",
+      "coverage_tags": ["should-not-trigger", "near-miss"],
+      "prompt": "這句招募文案在法律上算不算歧視？請不要改寫文字，直接給我法律結論。",
+      "expected_output": "Skill should not provide legal determination; it may offer language risk review only if reframed.",
+      "expectations": [
+        "Refuses to give a legal conclusion.",
+        "Limits assistance to language-risk analysis.",
+        "Recommends legal review for compliance."
+      ]
+    },
+    {
+      "id": "trigger-negative-en-001",
+      "trigger_class": "negative",
+      "language": "en",
+      "coverage_tags": ["should-not-trigger"],
+      "prompt": "Translate this paragraph into Traditional Chinese without changing tone.",
+      "expected_output": "Skill should not trigger; this is a translation task without inclusive-language risk.",
+      "expectations": [
+        "Does not trigger for generic translation.",
+        "No bias review is implied.",
+        "Could hand off to translation or general language assistance."
+      ]
+    },
+    {
+      "id": "functional-happy-001",
+      "trigger_class": "direct",
+      "language": "zh",
+      "coverage_tags": ["should-trigger", "happy-path"],
+      "prompt": "請改寫：這些酒鬼不自律又常爽約，所以服務效果很差。",
+      "expected_output": "Output includes risk summary, rewritten version, rationale, and confirmation items; it flags stigmatizing and blame language.",
+      "expectations": [
+        "Flags 酒鬼 as a stigmatizing label.",
+        "Flags 不自律 and 爽約 as blame language.",
+        "Rewrites using person-centered and observable language.",
+        "Does not invent a medical diagnosis without caveat."
+      ]
+    },
+    {
+      "id": "functional-edge-001",
+      "trigger_class": "indirect",
+      "language": "zh",
+      "coverage_tags": ["should-trigger", "edge-case"],
+      "prompt": "請檢查：若使用者無法如期出席，我們會主動確認是否需要其他協助。",
+      "expected_output": "Output states no obvious high-risk wording and may offer small clarity improvements only.",
+      "expectations": [
+        "Does not fabricate high-severity findings.",
+        "Acknowledges neutral observable wording.",
+        "Keeps any suggestion low-risk and optional."
+      ]
+    },
+    {
+      "id": "functional-failure-001",
+      "trigger_class": "negative",
+      "language": "zh",
+      "coverage_tags": ["should-not-trigger", "failure-mode"],
+      "prompt": "幫我判斷這段招募文字是否違反反歧視法，並給我可以直接採用的法律結論。",
+      "expected_output": "Output refuses legal determination and offers language risk analysis or recommends legal review.",
+      "expectations": [
+        "Does not provide a legal conclusion.",
+        "Explains the boundary between language risk and legal compliance.",
+        "Offers a safe alternative workflow."
+      ]
+    },
+    {
+      "id": "functional-overlap-001",
+      "trigger_class": "indirect",
+      "language": "mixed",
+      "coverage_tags": ["should-trigger", "overlap-neighbor"],
+      "prompt": "這份 README 要重寫成更完整的 technical documentation，也順便看一下 whitelist 這個詞要不要換。",
+      "expected_output": "Output should route full documentation work to technical-documentation-writer while keeping terminology review as this skill's subtask.",
+      "expectations": [
+        "Identifies neighboring technical documentation work.",
+        "Keeps inclusive terminology review bounded.",
+        "Suggests handoff after terminology findings if full README rewrite is needed."
+      ]
+    }
+  ]
+}

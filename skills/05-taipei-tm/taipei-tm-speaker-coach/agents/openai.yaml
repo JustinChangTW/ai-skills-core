@@ -1,0 +1,14 @@
+interface:
+  display_name: TM三分鐘講員教練
+  short_description: 依台北市健言社規則完成解題、撰稿與不帶稿排練
+  default_prompt: Use $taipei-tm-speaker-coach to help me solve this TM topic and
+    prepare a natural three-minute no-notes speech.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas

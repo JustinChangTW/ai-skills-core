@@ -1,0 +1,14 @@
+interface:
+  display_name: arXiv 學術研究
+  short_description: 搜尋、查證與追蹤 arXiv 學術論文及引用證據資料
+  default_prompt: Use $arxiv-research to find and verify recent arXiv papers about
+    this topic.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

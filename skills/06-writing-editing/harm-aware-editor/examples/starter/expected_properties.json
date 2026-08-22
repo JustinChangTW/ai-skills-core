@@ -1,0 +1,16 @@
+{
+  "must_include": [
+    "風險摘要",
+    "改寫版本",
+    "修改理由",
+    "需確認事項"
+  ],
+  "must_flag": [
+    "stigmatizing label",
+    "blame language"
+  ],
+  "must_avoid": [
+    "legal conclusion",
+    "medical diagnosis without caveat"
+  ]
+}

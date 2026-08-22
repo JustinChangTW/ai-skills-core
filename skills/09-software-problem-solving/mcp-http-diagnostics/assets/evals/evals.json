@@ -1,0 +1,39 @@
+{
+  "skill_name": "mcp-http-diagnostics",
+  "evals": [
+    {
+      "id": 1,
+      "name": "exact-mcp-url-fast-path",
+      "prompt": "請用這個 streamable http 連結 http://127.0.0.1:9091/mcp，先確認能不能連，再把工具清單列給我。",
+      "expected_output": "先做 initialize，再做 tools/list，回報工具清單與 protocol version。",
+      "files": [],
+      "expectations": [
+        "不先把時間花在 list_mcp_resources",
+        "不把 GET /mcp 當成主要 health check",
+        "有回報 tool names"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "wrong-get-assumption",
+      "prompt": "我直接 GET /mcp 只拿到 400，這個 MCP server 是不是掛了？",
+      "expected_output": "指出 GET /mcp 不是最短判活方式，改走 POST initialize 並說明原因。",
+      "files": [],
+      "expectations": [
+        "會糾正錯誤前提",
+        "會建議或直接執行 initialize"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "base-url-needs-mcp",
+      "prompt": "幫我確認 http://127.0.0.1:9091 這個 MCP HTTP server 有哪些工具。",
+      "expected_output": "先試 exact URL，再補試 /mcp，最後列出工具或明確說 endpoint 不對。",
+      "files": [],
+      "expectations": [
+        "會做 endpoint normalization",
+        "失敗時有 error matrix 式分流"
+      ]
+    }
+  ]
+}

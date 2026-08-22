@@ -1,0 +1,14 @@
+interface:
+  display_name: Video Subtitle
+  short_description: "\u5F71\u7247\u8F49\u9304\u3001\u5B57\u5E55\u6821\u5C0D\u3001\
+    \u6A23\u5F0F\u5957\u7528\u3001\u71D2\u9304\u8207\u5B57\u5E55\u6A94\u8F38\u51FA\
+    \u6D41\u7A0B"
+  default_prompt: Use $video-subtitle to create accurate Traditional Chinese subtitles
+    for my video.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

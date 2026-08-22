@@ -1,0 +1,14 @@
+interface:
+  display_name: TM主席主持教練
+  short_description: 規劃台北市健言社整場流程、主持提示、交棒與突發備案
+  default_prompt: Use $taipei-tm-chair-coach to prepare my Taipei TM chair run sheet
+    and contingency cards.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas

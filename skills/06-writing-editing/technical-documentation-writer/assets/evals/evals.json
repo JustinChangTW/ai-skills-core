@@ -1,0 +1,53 @@
+{
+  "skill_name": "technical-documentation-writer",
+  "evals": [
+    {
+      "id": 1,
+      "name": "readme-onboarding-from-repo",
+      "prompt": "請根據這個 repo 的現有檔案與啟動流程，幫我寫一份給新工程師看的 README，至少包含專案目的、環境需求、安裝、第一次啟動、驗證方式與常見失敗排查。",
+      "expected_output": "回覆先界定讀者與文件類型，再產出一份可執行的 README 草稿，包含前置條件、步驟、驗證與 troubleshooting。",
+      "files": [],
+      "expectations": [
+        "回覆明確把文件定位成 README 或 getting started 類型。",
+        "回覆包含前置條件、步驟、驗證方式與至少一個常見失敗情境。",
+        "回覆不會只寫行銷式專案介紹。"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "rewrite-api-usage-guide",
+      "prompt": "這份 API 文件是舊版的，請幫我重寫成新版的 API usage guide。要把認證、主要 endpoint、request/response 範例、錯誤處理與版本差異講清楚。如果有不確定的地方請標出來。",
+      "expected_output": "回覆先做證據盤點與版本範圍確認，再產出新版 API usage guide 的章節與內容草稿。",
+      "files": [],
+      "expectations": [
+        "回覆會標示版本範圍或待確認缺口。",
+        "回覆包含認證方式、範例、錯誤處理與限制。",
+        "回覆不會假裝所有 endpoint 細節都已知。 "
+      ]
+    },
+    {
+      "id": 3,
+      "name": "runbook-with-failure-recovery",
+      "prompt": "請幫我寫一份支付服務的 on-call runbook，讓值班工程師在告警出現時知道先看哪裡、怎麼診斷、何時回滾、何時升級通報。",
+      "expected_output": "回覆把文件定位成 runbook 或 troubleshooting guide，並提供症狀、診斷、修復、回滾與 escalation 條件。",
+      "files": [],
+      "expectations": [
+        "回覆包含症狀、診斷步驟、修復步驟與升級條件。",
+        "回覆會提醒需要依實際告警與系統證據驗證，不會捏造監控指標。",
+        "回覆不是一般性的 SOP 空話。"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "docs-gap-analysis",
+      "prompt": "我們已經有安裝文件與零散 FAQ，但新客戶還是常常卡關。請幫我做 docs gap analysis，告訴我接下來最該補哪幾份文件，受眾是誰，為什麼。",
+      "expected_output": "回覆產出文件盤點、缺口、優先順序與建議模板，不會直接亂寫一整套文件。",
+      "files": [],
+      "expectations": [
+        "回覆列出建議新增文件、目標受眾與優先順序。",
+        "回覆會區分 tutorial、how-to、reference 或 FAQ 等類型。",
+        "回覆不會把 docs audit 誤當成一般寫作任務。"
+      ]
+    }
+  ]
+}

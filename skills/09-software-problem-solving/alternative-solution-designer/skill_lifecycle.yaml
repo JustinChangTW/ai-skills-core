@@ -1,0 +1,27 @@
+name: alternative-solution-designer
+status: draft
+owner: Allan Yiin
+archetype: analyzer
+primary_structure_pattern: Inversion
+lifecycle:
+  review_interval_days: 90
+  next_review_due: 2026-08-22
+support:
+  primary_hosts:
+    - Codex
+    - Claude Code
+  languages:
+    - zh-TW
+    - en
+risk:
+  level: medium
+  notes:
+    - Produces decision guidance; outputs may involve operational, legal, labor, safety, or cost trade-offs that require domain validation before execution.
+dependencies:
+  scripts: []
+  references:
+    - references/output-template.md
+    - references/structure-models.md
+    - references/quality_checklist.md
+    - references/readiness_report.md
+    - references/migration-governance.md

@@ -1,0 +1,14 @@
+interface:
+  display_name: 暗網情資分析
+  short_description: 以免費合法來源追蹤外洩、惡意基礎設施與駭客活動風險
+  default_prompt: Use $dark-web-intelligence-analysis to investigate this suspected
+    credential leak or hacker activity with free, lawful, source-traceable intelligence.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

@@ -1,0 +1,40 @@
+name: oral-expression-coach
+status: draft
+owner: "Justin Chang"
+archetype: reviewer
+primary_structure_pattern: pipeline
+lifecycle:
+  created_at: 2026-08-11
+  last_validated_at: 2026-08-11
+  last_released_at: null
+  review_interval_days: 90
+  next_review_due: 2026-11-09
+support:
+  primary_hosts: [chatgpt, codex]
+  secondary_hosts: [agent-skills-compatible]
+  unsupported_hosts: [hosts-without-audio-input-for-vocal-analysis]
+risk:
+  external_side_effects: false
+  requires_secrets: false
+  data_sensitivity: medium
+dependencies:
+  scripts: []
+  references:
+    - references/speaking-frameworks.md
+    - references/diagnosis-rubric.md
+    - references/scenario-playbooks.md
+    - references/practice-loop.md
+    - references/output-templates.md
+    - references/migration-governance.md
+    - references/readiness_report.md
+stewardship:
+  reviewers: [skill-owner]
+  stale_after_days: 180
+  escalation: {stale: needs-maintenance, no_owner: orphaned}
+portfolio:
+  overlaps_with: [barnum-speech, humanize-text, ethical-persuasion-strategy, slide-content-planner]
+  hands_off_to: [barnum-speech, humanize-text, ethical-persuasion-strategy, slide-content-planner]
+  depends_on: []
+  supersedes: []
+  deprecated_by: null
+  shares_tool_contract_with: []

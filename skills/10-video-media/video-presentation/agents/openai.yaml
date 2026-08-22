@@ -1,0 +1,14 @@
+interface:
+  display_name: Video Presentation
+  short_description: "\u628A\u7C21\u5831\u3001\u9010\u9801\u8B1B\u7A3F\u8207\u65C1\
+    \u767D\u88FD\u4F5C\u6210\u53EF\u9810\u89BD\u7684\u6559\u5B78\u6216\u5206\u4EAB\
+    \u5F71\u7247"
+  default_prompt: Use $video-presentation to turn my slides and narration into a polished
+    presentation video.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

@@ -1,0 +1,13 @@
+interface:
+  display_name: 台灣隱形冠軍雷達
+  short_description: 找出台灣世界級利基企業，查證市占並執行歷史無偷看回測
+  default_prompt: 使用 $taiwan-hidden-champion-radar 掃描台灣潛在隱形冠軍，並以歷史時間點資料回測雷達的命中與誤判。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

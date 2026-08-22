@@ -1,0 +1,38 @@
+name: expert-method-distiller
+status: validated
+owner: "Justin personal skill library"
+archetype: analysis
+primary_structure_pattern: pipeline
+lifecycle:
+  created_at: 2026-08-15
+  last_validated_at: 2026-08-15
+  last_released_at: null
+  review_interval_days: 60
+  next_review_due: 2026-10-14
+support:
+  primary_hosts: [agent-skills, codex]
+  secondary_hosts: [copilot]
+  unsupported_hosts: []
+risk:
+  external_side_effects: false
+  requires_secrets: false
+  data_sensitivity: high
+dependencies:
+  scripts: []
+  references:
+    - references/consent-and-identity.md
+    - references/evidence-and-modeling.md
+    - references/readiness_report.md
+stewardship:
+  reviewers: []
+  stale_after_days: 120
+  escalation:
+    stale: needs-maintenance
+    no_owner: orphaned
+portfolio:
+  overlaps_with: [deep-research-writing, oral-expression-coach, humanize-text]
+  hands_off_to: [knowledge-method-distiller, skill-creator]
+  depends_on: []
+  supersedes: []
+  deprecated_by: null
+  shares_tool_contract_with: []

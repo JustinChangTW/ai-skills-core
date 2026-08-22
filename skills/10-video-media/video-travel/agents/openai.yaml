@@ -1,0 +1,14 @@
+interface:
+  display_name: Video Travel
+  short_description: "\u5C07\u65C5\u904A\u7167\u7247\u8207\u7247\u6BB5\u6574\u7406\
+    \u6210\u6709\u65E5\u671F\u3001\u5730\u9EDE\u548C\u6545\u4E8B\u7DDA\u7684\u56DE\
+    \u61B6\u5F71\u7247"
+  default_prompt: Use $video-travel to organize my travel photos and clips into a
+    story-driven video.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

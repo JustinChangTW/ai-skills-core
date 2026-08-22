@@ -1,0 +1,13 @@
+interface:
+  display_name: humanize text
+  short_description: 在使用者要把 AI 味太重、翻譯腔或過度制式的內容改寫成人類自然語氣時使用。常見觸發像「潤稿貼文」「重寫 Email」「把講稿寫自然一點」。保留事實與專有名詞；不用來偽造經驗或繞過
+    AI 偵測。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

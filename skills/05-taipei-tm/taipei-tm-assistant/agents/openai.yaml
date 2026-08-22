@@ -1,0 +1,14 @@
+interface:
+  display_name: 健言小天使
+  short_description: 辨識台北市健言社TM角色並協調五個專用教練
+  default_prompt: Use $taipei-tm-assistant to identify my Taipei TM role and route
+    this task to the right specialist.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas

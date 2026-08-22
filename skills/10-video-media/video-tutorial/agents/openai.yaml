@@ -1,0 +1,14 @@
+interface:
+  display_name: Video Tutorial
+  short_description: "\u5C07\u87A2\u5E55\u9304\u5F71\u88FD\u6210\u5206\u6B65\u9A5F\
+    \u3001\u53EF\u6A19\u793A\u3001\u53EF\u9810\u89BD\u7684\u64CD\u4F5C\u6559\u5B78\
+    \u5F71\u7247"
+  default_prompt: Use $video-tutorial to turn my screen recording into a clear step-by-step
+    tutorial video.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

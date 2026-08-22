@@ -1,0 +1,65 @@
+name: humanize-text
+status: draft
+owner: Allan Yiin
+archetype: executor
+primary_structure_pattern: Pipeline
+lifecycle:
+  created_at: 2026-05-11
+  last_validated_at: 2026-05-11
+  review_interval_days: 90
+  next_review_due: 2026-08-09
+support:
+  primary_hosts:
+    - Agent Skills-compatible hosts
+  secondary_hosts:
+    - Codex
+    - OpenClaw
+  unsupported_hosts: []
+risk:
+  external_side_effects: false
+  requires_secrets: false
+  data_sensitivity: user-provided text may contain private or unpublished drafts
+dependencies:
+  scripts:
+    - scripts/check_no_lists.py
+  references:
+    - references/chinese-naturalization.md
+    - references/ai-patterns.md
+    - references/voice-profiles.md
+    - references/audience-effect.md
+    - references/coherence-argument-flow.md
+    - references/domain-exceptions.md
+    - references/source-notes.md
+    - references/output-contract.md
+    - references/quality_checklist.md
+    - references/trigger-evals.json
+    - references/migration-governance.md
+metadata:
+  version: 2026.5.11
+  stage: draft
+  language: zh-TW
+  compatibility:
+    core: Portable Agent Skill; text-only workflow
+    optional_runtime:
+      - Python 3 for scripts/check_no_lists.py
+    not_required:
+      - network
+      - browser
+      - mcp
+      - credentials
+  release_readiness:
+    draft: blocked
+    publish: blocked
+    blockers:
+      - Existing release/evidence-2026.5.11.json is not a complete benchmark artifact
+      - No paired with-skill / baseline benchmark archive
+      - No live benchmark summary
+  evals:
+    functional_fixture: assets/evals/evals.json
+    trigger_fixture: references/trigger-evals.json
+    regression_gates: assets/evals/regression_gates.json
+  maintenance:
+    next_steps:
+      - Run paired benchmark with previous skill snapshot as baseline
+      - Generate release benchmark summary
+      - Add compact worked examples reference if outputs remain inconsistent

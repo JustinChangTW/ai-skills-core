@@ -1,0 +1,5 @@
+{
+  "must_include_sections": ["研究結論", "研究範圍與方法", "主要證據", "限制與未知", "來源"],
+  "must_not_include": ["TODO", "待補", "虛構引用"],
+  "minimum_use_cases": 1
+}

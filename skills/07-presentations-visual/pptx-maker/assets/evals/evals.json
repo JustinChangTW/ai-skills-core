@@ -1,0 +1,42 @@
+{
+  "skill_name": "pptx-maker",
+  "evals": [
+    {
+      "id": 1,
+      "name": "new-deck-from-approved-plan",
+      "prompt": "我已經有逐頁內容規劃、講稿摘要與品牌色，請把這份內容做成 10 頁 16:9 的 PPTX，不要再重想故事線。",
+      "expected_output": "先確認這是製作階段，再選定新建製作路線，輸出逐頁 build spec、製作步驟、QA 重點與成品交付說明。",
+      "files": [],
+      "expectations": [
+        "指出這是投影片製作而不是內容規劃",
+        "明確選擇一條製作路線並說明原因",
+        "包含逐頁 build spec 或等價結構",
+        "包含 QA 與交付物說明"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "template-remix",
+      "prompt": "這裡有一份公司模板 PPTX，請把核定好的 8 頁內容套進去，版型要配合內容數量，不要硬塞。",
+      "expected_output": "先盤點模板版型，再做頁面映射與內容替換計畫，避免不適合的 placeholder 配置。",
+      "files": [],
+      "expectations": [
+        "選擇 template-remix 路線",
+        "提到模板盤點或版型映射",
+        "避免把內容硬塞進不適合的欄數"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "scoped-existing-deck-edit",
+      "prompt": "請直接修改現有簡報第 3 到第 5 頁，更新新版數據並補 speaker notes，不要動其他頁。",
+      "expected_output": "只針對指定範圍編修現有 deck，保留其他頁面不變，並納入輸出驗證。",
+      "files": [],
+      "expectations": [
+        "選擇 scoped edit 路線，例如 ooxml-surgical-edit",
+        "明確限制修改範圍",
+        "提到 speaker notes 與檔案驗證"
+      ]
+    }
+  ]
+}

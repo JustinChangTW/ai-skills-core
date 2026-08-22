@@ -1,0 +1,13 @@
+interface:
+  display_name: 簡報自然化設計師
+  short_description: 重構 AI 味簡報，連同版面、圖片與資訊視覺一起自然化
+  default_prompt: 使用 $humanize-presentation-visuals 診斷這份簡報的 AI 味，重新設計版面並製作需要的圖像素材。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas

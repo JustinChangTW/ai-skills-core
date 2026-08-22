@@ -1,0 +1,68 @@
+{
+  "skill": "humanize-text",
+  "version": "2026.5.11",
+  "audit_date": "2026-05-11",
+  "stage": "draft",
+  "status": "DRAFT_PASS_PUBLISH_BLOCKED",
+  "compatibility": {
+    "core_workflow": "text-only, portable Agent Skill",
+    "optional_dependencies": [
+      "Python 3 for scripts/check_no_lists.py"
+    ],
+    "not_required": [
+      "network",
+      "browser",
+      "mcp",
+      "credentials",
+      "external APIs"
+    ]
+  },
+  "checks": [
+    {
+      "command": "python -m json.tool skills\\humanize-text\\assets\\evals\\evals.json",
+      "status": "pass"
+    },
+    {
+      "command": "python -m json.tool skills\\humanize-text\\references\\trigger-evals.json",
+      "status": "pass"
+    },
+    {
+      "command": "python scripts\\audit_skill_references.py --repo-root .",
+      "status": "pass"
+    },
+    {
+      "command": "git diff --check -- skills\\humanize-text",
+      "status": "pass"
+    },
+    {
+      "command": "python scripts\\validate_skills.py",
+      "status": "blocked",
+      "reason": "Unrelated untracked files under skills/skill-creator-advanced are rejected by repo-level validation."
+    }
+  ],
+  "coverage": {
+    "functional_eval_count": 14,
+    "trigger_eval_count": 20,
+    "covered_topics": [
+      "zh natural rewrite",
+      "bullet to prose",
+      "mixed-language copy",
+      "unsafe request refusal",
+      "lecture-tone removal",
+      "English AI pattern cleanup",
+      "detect-only pattern report",
+      "academic exception",
+      "format artifact cleanup",
+      "formal marker cluster cleanup",
+      "audience-effect rewrite",
+      "stance inventory",
+      "coherence repair",
+      "coherence detection"
+    ]
+  },
+  "publish_blockers": [
+    "Repo-level validator is blocked outside humanize-text.",
+    "No paired with-skill / baseline benchmark archive.",
+    "No live benchmark summary."
+  ]
+}

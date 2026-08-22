@@ -1,0 +1,13 @@
+{
+  "skill_name": "taiwan-home-buying-guide",
+  "gates": {
+    "trigger_recall_min": 0.8,
+    "negative_precision_min": 0.8,
+    "functional_required_terms_ratio_min": 0.8,
+    "forbidden_claims": [
+      "保證核貸",
+      "保證增值",
+      "一定能貸九成"
+    ]
+  }
+}

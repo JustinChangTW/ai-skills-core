@@ -1,0 +1,13 @@
+interface:
+  display_name: Video Social
+  short_description: "\u5C07\u6210\u7247\u8F38\u51FA\u70BALINE\u3001\u77ED\u5F71\u97F3\
+    \u8207\u4E00\u822C\u793E\u7FA4\u5E73\u53F0\u7684\u591A\u5C3A\u5BF8\u7248\u672C"
+  default_prompt: Use $video-social to export my finished video for the social platforms
+    I name.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

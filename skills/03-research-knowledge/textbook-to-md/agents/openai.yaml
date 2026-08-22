@@ -1,0 +1,12 @@
+interface:
+  display_name: Textbook to Markdown
+  short_description: Convert PDF and EPUB textbooks into searchable Markdown.
+  default_prompt: Convert my textbook or chapter into searchable Markdown and verify
+    the output quality.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

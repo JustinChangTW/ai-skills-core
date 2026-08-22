@@ -1,0 +1,4 @@
+interface:
+  display_name: "巴納姆演講"
+  short_description: "用巴納姆式首尾打造自然且深具共鳴的三分鐘短篇演講稿"
+  default_prompt: "請用巴納姆式首尾協助我規劃或改寫一篇短篇演講。"

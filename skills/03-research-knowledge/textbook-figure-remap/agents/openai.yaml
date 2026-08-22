@@ -1,0 +1,4 @@
+interface:
+display_name: "Textbook Figure Remap"
+  short_description: "Extract and verify textbook figures on demand."
+  default_prompt: "Extract the requested figure from my textbook PDF and verify that the crop is correct."

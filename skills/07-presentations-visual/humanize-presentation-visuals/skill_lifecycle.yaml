@@ -1,0 +1,45 @@
+name: humanize-presentation-visuals
+status: draft
+owner: "Allan Yiin"
+archetype: ops
+primary_structure_pattern: pipeline
+lifecycle:
+  created_at: 2026-08-15
+  last_validated_at: 2026-08-15
+  last_released_at: null
+  review_interval_days: 60
+  next_review_due: 2026-10-14
+support:
+  primary_hosts:
+    - agent-skills
+  secondary_hosts:
+    - chatgpt-work
+  unsupported_hosts: []
+risk:
+  external_side_effects: true
+  requires_secrets: false
+  data_sensitivity: low
+dependencies:
+  scripts: []
+  references:
+    - references/readiness_report.md
+stewardship:
+  reviewers: []
+  stale_after_days: 120
+  escalation:
+    stale: needs-maintenance
+    no_owner: orphaned
+portfolio:
+  overlaps_with:
+    - humanize-text
+    - slide-content-planner
+    - pptx-maker
+    - visual-presentation-production
+  hands_off_to:
+    - pptx-maker
+    - visual-presentation-production
+  depends_on:
+    - image-generation
+  supersedes: []
+  deprecated_by: null
+  shares_tool_contract_with: []

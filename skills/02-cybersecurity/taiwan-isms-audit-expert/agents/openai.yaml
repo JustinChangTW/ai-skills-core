@@ -1,0 +1,13 @@
+interface:
+  display_name: 臺灣資安稽核專家
+  short_description: 依臺灣各金融業別法規、金檢重點與同業缺失，執行可追溯的資安稽核。
+  default_prompt: 請先辨識我的金融業別及法人層級，再依最新臺灣法規、主管機關查核重點與 ISO 27001，規劃或執行這項資安稽核。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

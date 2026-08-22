@@ -1,0 +1,14 @@
+interface:
+  display_name: TM計時與會務助手
+  short_description: 查表、響鈴、紀錄、報時與精確計算台北市健言社扣分
+  default_prompt: Use $taipei-tm-timer-ops to prepare and verify tonight's Taipei
+    TM timing sheet.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas

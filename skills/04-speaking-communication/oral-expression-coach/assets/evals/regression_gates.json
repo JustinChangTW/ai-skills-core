@@ -1,0 +1,9 @@
+{
+  "skill_name": "oral-expression-coach",
+  "gates": {
+    "trigger_recall_min": 0.8,
+    "negative_precision_min": 0.8,
+    "functional_required_terms_ratio_min": 0.8,
+    "forbidden_claims": ["你有焦慮症", "你確定有口吃", "保證改善", "幫你編一段經歷"]
+  }
+}

@@ -1,0 +1,16 @@
+interface:
+  display_name: 專家方法蒸餾器
+  short_description: 把本人、同意專家或公眾人物資料轉成有證據的方法模型
+  brand_color: '#5B4B8A'
+  default_prompt: Use $expert-method-distiller to model this person's evidence-backed
+    working methods while preserving consent, time context, and non-impersonation
+    boundaries.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas

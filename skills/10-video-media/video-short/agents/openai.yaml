@@ -1,0 +1,14 @@
+interface:
+  display_name: Video Short
+  short_description: "\u5C07\u9577\u5F71\u7247\u6574\u7406\u6210\u6709\u958B\u5834\
+    \u9264\u5B50\u3001\u91CD\u9EDE\u5B57\u5E55\u8207\u76F4\u5F0F\u69CB\u5716\u7684\
+    \u77ED\u5F71\u97F3"
+  default_prompt: Use $video-short to turn my source video into a concise vertical
+    short.
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

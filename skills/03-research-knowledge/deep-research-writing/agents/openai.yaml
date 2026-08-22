@@ -1,0 +1,14 @@
+interface:
+  display_name: 深度研究與證據寫作
+  short_description: 不限主題的多來源查證、反證分析、引用核實與研究報告寫作
+  default_prompt: Use $deep-research-writing to investigate this topic across reliable
+    sources and produce a traceable evidence-based report.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

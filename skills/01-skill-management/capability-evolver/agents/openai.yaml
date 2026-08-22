@@ -1,0 +1,14 @@
+interface:
+  display_name: 能力進化器
+  short_description: 盤點能力缺口，尋找、比較並安全安裝最合適的 Skills
+  default_prompt: Use $capability-evolver to assess my capability gaps and safely
+    recommend the best Skill upgrade.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
