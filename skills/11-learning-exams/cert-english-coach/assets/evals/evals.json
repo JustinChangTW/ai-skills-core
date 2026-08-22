@@ -1,0 +1,118 @@
+{
+  "skill_name": "cert-english-coach",
+  "benchmark_metadata_required": [
+    "skill_version",
+    "git_commit",
+    "host",
+    "model",
+    "temperature",
+    "run_timestamp",
+    "grader_version"
+  ],
+  "evals": [
+    {
+      "id": "direct-question-zh",
+      "name": "security-question-breakdown",
+      "type": "functional",
+      "language": "zh",
+      "trigger_class": "direct",
+      "coverage_tags": ["should-trigger", "happy-path"],
+      "prompt": "這題英文我看不懂：Which of the following controls would MOST effectively mitigate the risk of unauthorized access? A. Logging B. MFA C. Backup D. Hashing，請保姆級拆解。",
+      "expected_output": "標示MOST，拆主詞、動作與目的，解釋高收益字，逐項回扣題幹並給不超過5題的小考。",
+      "files": [],
+      "expectations": [
+        "preserves the English stem",
+        "explains why each option is right or wrong",
+        "includes active recall without answers"
+      ]
+    },
+    {
+      "id": "direct-group-mixed",
+      "name": "confusion-set-pack",
+      "type": "functional",
+      "language": "mixed",
+      "trigger_class": "direct",
+      "coverage_tags": ["should-trigger", "near-miss"],
+      "prompt": "restrictive / permissive / prudent 這三個 cert exam vocabulary 我一直選錯，幫我用群組方式背。",
+      "expected_output": "建立Group Pack、每字Rule of 1、最小差異、題幹訊號、短記憶鉤子及兩題辨識練習，不補無關單字湊數。",
+      "files": [],
+      "expectations": [
+        "uses group pack",
+        "labels mnemonic rather than false etymology",
+        "keeps the lesson to the supplied three words"
+      ]
+    },
+    {
+      "id": "indirect-screenshot",
+      "name": "exam-screenshot-reading",
+      "type": "functional",
+      "language": "zh-TW",
+      "trigger_class": "indirect",
+      "coverage_tags": ["should-trigger", "edge-case"],
+      "prompt": "我把CCSP英文題目的截圖貼上來了，單字看得懂一點，但整句合起來不知道它在問什麼，也不知道EXCEPT要怎麼看。",
+      "expected_output": "確認圖片可讀範圍，醒目標示EXCEPT，拆句骨架並避免臆測模糊選項。",
+      "files": ["question.png"],
+      "expectations": [
+        "routes to cert-english-coach",
+        "treats EXCEPT as a high-risk signal",
+        "does not invent unreadable text"
+      ]
+    },
+    {
+      "id": "indirect-correction-en",
+      "name": "quiz-correction-loop",
+      "type": "functional",
+      "language": "en",
+      "trigger_class": "indirect",
+      "coverage_tags": ["should-trigger", "failure-mode"],
+      "prompt": "My answers to your mini quiz are 1B, 2 ensure, 3 false. I keep mixing ensure and assure. Please check them and help me remember only what I got wrong.",
+      "expected_output": "進入精簡Correction Loop，只處理錯因、最小差異、新鉤子與1至3題再測，不重貼全部課程與複習排程。",
+      "files": [],
+      "expectations": [
+        "uses correction loop",
+        "does not repeat the full nine-section lesson",
+        "does not mark mastery without evidence"
+      ]
+    },
+    {
+      "id": "negative-general-chat",
+      "name": "general-english-conversation",
+      "type": "trigger",
+      "language": "zh",
+      "trigger_class": "negative",
+      "coverage_tags": ["should-not-trigger"],
+      "prompt": "我要去日本旅行，請陪我練習飯店入住、問路和餐廳點餐的日常英文對話，順便糾正自然說法。",
+      "expected_output": "這是旅行情境的一般英文會話與口語自然度任務，應交給一般英文會話教練，不啟動證照題幹、單字卡、Group Pack或複習排程。",
+      "files": [],
+      "expectations": ["does not route to cert-english-coach"]
+    },
+    {
+      "id": "negative-technical-depth",
+      "name": "technical-not-language",
+      "type": "trigger",
+      "language": "mixed",
+      "trigger_class": "negative",
+      "coverage_tags": ["should-not-trigger", "overlap-neighbor", "neighbor-confusion"],
+      "prompt": "我已經看懂英文，請深入比較 AES-GCM 和 AES-CBC + HMAC 的安全性、nonce 要求與實作風險。",
+      "expected_output": "交由資安技術教學或研究能力，不啟動證照英文拆題流程。",
+      "files": [],
+      "expectations": ["does not route to cert-english-coach"]
+    },
+    {
+      "id": "direct-long-list",
+      "name": "batch-limit",
+      "type": "functional",
+      "language": "zh",
+      "trigger_class": "direct",
+      "coverage_tags": ["should-trigger", "edge-case"],
+      "prompt": "我一次貼了25個資安證照英文單字，全部都要用幽默方法教我，今天只有15分鐘。",
+      "expected_output": "依高頻與易混關係排序，先教5至7字並列後續批次，不用25個超長單字卡轟炸使用者。",
+      "files": [],
+      "expectations": [
+        "limits the first batch to seven words",
+        "prioritizes high-yield terms",
+        "includes a short active-recall quiz"
+      ]
+    }
+  ]
+}

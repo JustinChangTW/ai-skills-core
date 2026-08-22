@@ -1,0 +1,47 @@
+name: cert-english-coach
+status: validated
+owner: Justin Chang
+archetype: executor
+primary_structure_pattern: pipeline
+lifecycle:
+  created_at: 2026-08-22
+  last_validated_at: 2026-08-22
+  last_released_at: null
+  review_interval_days: 90
+  next_review_due: 2026-11-20
+support:
+  primary_hosts:
+    - codex
+    - chatgpt
+  secondary_hosts:
+    - agent-skills
+  unsupported_hosts: []
+risk:
+  external_side_effects: false
+  requires_secrets: false
+  data_sensitivity: low
+dependencies:
+  scripts: []
+  references:
+    - references/mode-templates.md
+    - references/mnemonic-quality.md
+    - references/readiness_report.md
+    - references/migration-governance.md
+stewardship:
+  reviewers:
+    - Justin Chang
+  stale_after_days: 180
+  escalation:
+    stale: needs-maintenance
+    no_owner: orphaned
+portfolio:
+  overlaps_with:
+    - oral-expression-coach
+    - deep-research-writing
+    - secure-code-review
+  hands_off_to:
+    - deep-research-writing
+  depends_on: []
+  supersedes: []
+  deprecated_by: null
+  shares_tool_contract_with: []

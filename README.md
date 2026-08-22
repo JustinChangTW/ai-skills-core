@@ -16,6 +16,7 @@
 | `08-finance-property` | 財報、隱形冠軍與臺灣買房 | 財報分析、隱形冠軍雷達、買房攻略 |
 | `09-software-problem-solving` | 軟體設計、需求、問題拆解與 MCP | 前端、Spec、Vibe Coding、MCP 診斷 |
 | `10-video-media` | 剪輯、字幕、短影音、旅遊與教學影片 | Video Editor、Short、Subtitle |
+| `11-learning-exams` | 證照考試、題目拆解、記憶與複習 | 證照英文小老師 |
 
 完整清單見 [CATALOG.md](CATALOG.md)，檔案完整性見 [SHA256SUMS.txt](SHA256SUMS.txt)。
 

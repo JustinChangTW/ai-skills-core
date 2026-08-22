@@ -86,3 +86,7 @@
 - `video-subtitle`：逐字稿、字幕、翻譯與燒錄。
 - `video-travel`：旅行照片與影片回憶錄。
 - `video-tutorial`：操作畫面轉步驟教學影片。
+
+## 11 學習與考試
+
+- `cert-english-coach`：資訊、資安、雲端與 ITSM 證照英文拆題、單字記憶及主動回憶教練。

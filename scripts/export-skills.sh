@@ -27,6 +27,7 @@ for s in humanize-presentation-visuals slide-content-planner pptx-maker visual-p
 for s in financial-statement-analysis taiwan-hidden-champion-radar taiwan-home-buying-guide; do copy_skill 08-finance-property "$s"; done
 for s in alternative-solution-designer frontend-design mcp-http-diagnostics problem-decomposer spec-organizer vibe-coding-guidelines; do copy_skill 09-software-problem-solving "$s"; done
 for s in video-editing-setup video-editor video-presentation video-short video-short-editor video-social video-subtitle video-travel video-tutorial; do copy_skill 10-video-media "$s"; done
+for s in cert-english-coach; do copy_skill 11-learning-exams "$s"; done
 
 python3 "$repo_root/scripts/generate-skill-readmes.py"
 "$repo_root/scripts/validate-backup.sh"
