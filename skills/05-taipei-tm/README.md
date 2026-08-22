@@ -13,7 +13,7 @@
 | [`taipei-tm-chair-coach`](taipei-tm-chair-coach/README.md) | 台北市健言社 TM 主席主持教練 | 規劃並主持台北市健言社整場TM |
 | [`taipei-tm-evaluator-coach`](taipei-tm-evaluator-coach/README.md) | 台北市健言社 TM 講評教練 | 依台北市健言社規則講評一位TM講員的三分鐘演講 |
 | [`taipei-tm-general-evaluator`](taipei-tm-general-evaluator/README.md) | 台北市健言社 TM 總評教練 | 準備台北市健言社整場TM的十五分鐘總評 |
-| [`taipei-tm-speaker-coach`](taipei-tm-speaker-coach/README.md) | 台北市健言社 TM 三分鐘講員教練 | 為台北市健言社TM講員準備三分鐘演講 |
+| [`taipei-tm-speaker-coach`](taipei-tm-speaker-coach/README.md) | 台北市健言社 TM 三分鐘講員教練 | 為台北市健言社TM講員準備三分鐘演講，涵蓋題目關鍵詞、形意功用聯想、真實故事撰稿、十秒內破題、行動呼籲、分段字數及不帶稿訓練 |
 | [`taipei-tm-timer-ops`](taipei-tm-timer-ops/README.md) | 台北市健言社 TM 計時與會務助手 | 執行台北市健言社TM計時、響鈴、紀錄與扣分計算 |
 
 ## 使用方式

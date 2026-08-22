@@ -1,7 +1,7 @@
 ---
 name: taipei-tm-assistant
 description: "作為台北市健言社TM任務入口，辨識角色並交給講員、講評、總評、主席或計時專用Skill。Use when user 說健言小天使、TM任務不確定該找誰，或一次要規劃多角色。Do not use for 國際Toastmasters角色。成功結果是只問必要資訊、共用資料一次收集並正確分流。"
-version: 2026.8.16
+version: 2026.8.22
 metadata: {author: "Justin personal skill library"}
 ---
 # 健言小天使
@@ -32,6 +32,11 @@ Successful output: 分流卡、共用事實、專用Skill工作順序與合併�
 - 講員／講評3分鐘有效2:30–3:30；2:30一響，2:59與3:00各一響，3:28／3:29／3:30各一響。
 - 主席控整場且本人無時間限制。細部計時以 `taipei-tm-timer-ops` 為準。
 
+## Shared knowledge priority
+- 社內制度與理念依序採用：使用者本次明確說明或提供的手冊 → 使用者提供的檔案 → 台北市健言社官網 `https://tmc1974.com/` → 其他通用演講資料。
+- 官網可用於確認社團宗旨、課程與公開文化；使用者提供的社內規則若與通用 Toastmasters 做法不同，以使用者確認的台北市健言社規則為準。
+- 引用理念時優先內化成自然內容，不把社訓、網址或制度硬塞進演講；確有延伸價值時才在正文後附來源 URL。
+
 <workflow>
 Step 0: 辨識任務
 - Action: 從對話判斷使用者角色、對象、交付物和是否跨角色；不重問已知資訊。
@@ -48,7 +53,7 @@ Step 1: 選最小Skill組合
 - Stop condition: 任務屬國際Toastmasters時停止套用本套社規。
 
 Step 2: 共用資料一次收集
-- Action: 整理題目、日期、名單、順序、配對、時間類別與四不風險，缺項只問會阻塞的內容。
+- Action: 整理題目、日期、名單、順序、配對、時間類別、四不風險、使用者手冊與需要參考的官網內容，缺項只問會阻塞的內容。
 - Input: 當期資料。
 - Output: 共用session brief。
 - Validation: 姓名、經歷、時間與社規不可臆造。
@@ -89,6 +94,7 @@ Output: 共用資料只收一次，再依主席、講員、計時分流並整合
 </examples>
 
 ## Resources
+- [assets/icon.svg](assets/icon.svg): Skill 介面圖示。
 - `assets/evals/evals.json`, `assets/evals/regression_gates.json`: 測試。
 - `references/readiness_report.md`, `references/checklist_template.md`: 檢查。
 - `references/fusion-playbook.md`, `references/migration-governance.md`, `references/migration-template.md`: 移植。

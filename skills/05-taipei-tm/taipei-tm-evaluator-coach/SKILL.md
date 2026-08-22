@@ -1,7 +1,7 @@
 ---
 name: taipei-tm-evaluator-coach
 description: "依台北市健言社規則講評一位TM講員的三分鐘演講。Use when 使用者要準備或修正個別講評。This skill only owns one-speaker evaluation. Do not use for 撰稿、整場總評、主席或計時，也不適用國際Toastmasters。成功結果是有證據、可執行且能在三分鐘說完的講評。"
-version: 2026.8.16
+version: 2026.8.22
 metadata:
   author: "Justin personal skill library"
 ---
@@ -63,7 +63,7 @@ Step 3: 給可執行示範
 - Stop condition: 需要大量重寫時，摘要需求並交講員教練。
 
 Step 4: 組成三分鐘講評
-- Action: 依「有效處＋證據 → 主問題＋影響 → 原則＋示範 → 鼓勵」組稿並朗讀計時。
+- Action: 採「褒—改—褒」結構：先以具體證據肯定最有效處，再溫和指出一個最重要改善點及影響並提供示範，最後回到講員潛力、進步或下一次可做到的鼓勵。不要為了形式硬湊稱讚，也不把「貶」變成人格批判。
 - Input: 前述分析。
 - Output: 自然口語講評稿或不帶稿骨架。
 - Validation: 符合四不與2:30–3:30；未實測不得宣稱準時。
@@ -78,7 +78,7 @@ Step 5: Finalization and QA
 </workflow>
 
 <output_contract>
-完整模式：1.觀察限制 2.有效處與證據 3.最重要改善點與影響 4.具體示範 5.三分鐘講評稿／骨架 6.時間與四不檢查。使用台灣自然口語；批評行為與作品，不批評人格。
+完整模式：1.觀察限制 2.褒：有效處與證據 3.改：最重要改善點與影響 4.具體示範 5.再褒：鼓勵與下一步 6.三分鐘講評稿／骨架 7.時間與四不檢查。使用台灣自然口語；批評行為與作品，不批評人格。
 </output_contract>
 
 <tool_rules>
@@ -104,6 +104,7 @@ Output: 不虛構原因；提供需要補記的句子、反應與結構觀察欄
 </examples>
 
 ## Resources
+- [assets/icon.svg](assets/icon.svg): Skill 介面圖示。
 - `assets/evals/evals.json`, `assets/evals/regression_gates.json`: 測試。
 - `references/readiness_report.md`, `references/checklist_template.md`: 發布與人工檢查。
 - `references/fusion-playbook.md`, `references/migration-governance.md`, `references/migration-template.md`: 合併與移植。

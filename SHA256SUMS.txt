@@ -399,12 +399,12 @@ ed3ec5aa1ba6f23a38838a7759564866c24bef5e214c37c3cc83bb70b3707e01  ./skills/04-sp
 adc9b913572067271c6c0125a1d3484eead98b944bc75fba658a03c68edc6438  ./skills/04-speaking-communication/oral-expression-coach/references/scenario-playbooks.md
 9ad7bf74a29443ba27e783add296d68123398d82dab02480e4ab71b7384db2da  ./skills/04-speaking-communication/oral-expression-coach/references/speaking-frameworks.md
 dddce4b3d62591215cffdff6b708225174bba82d29143c2009ff0edc89a96c69  ./skills/04-speaking-communication/oral-expression-coach/skill_lifecycle.yaml
-cf6a7581a89948d2d79fbcf98aacb16c78628d2e0682e1d7373112386a17a9cf  ./skills/05-taipei-tm/README.md
+5a96c21999cbbebe5309030c5639fae347c4baf3cd9b614ffcd1cefddf6506ee  ./skills/05-taipei-tm/README.md
 b7cd7027afcd107ce98e2335c0faba08e9f34ef3fb9ea7e6f7c57d7bb7ad0c36  ./skills/05-taipei-tm/barnum-speech/README.md
 9383b8b5af2b8ba37cf38589e6a1157d44c1a073aff274bcc852a5e680c86aee  ./skills/05-taipei-tm/barnum-speech/SKILL.md
 34d12947172281d63c18bc6970008268c43643d4378dd5b25d8ca17503dbe9ba  ./skills/05-taipei-tm/barnum-speech/agents/openai.yaml
-f5919c9dda61a9d8ecc45e9c987f7b8ee4ea70b6400c04a24d066f35cf723ec9  ./skills/05-taipei-tm/taipei-tm-assistant/README.md
-d59c88c8216d960926f830042bd7fea40eeec2d057c8ab046269b3decabfc8e5  ./skills/05-taipei-tm/taipei-tm-assistant/SKILL.md
+9d4fa9ca1fc07c2926a3bcd1e5e50c4d89a65d0199646022d1dceac189a45c71  ./skills/05-taipei-tm/taipei-tm-assistant/README.md
+2993f85f78250a225da65b2e223d167820bb9c0a5bd44fd57c3397bb5144945e  ./skills/05-taipei-tm/taipei-tm-assistant/SKILL.md
 97fdf17bd379f19ba5c5d9c6b6065779b31d4bff9615417c217cdb8f98ea9d88  ./skills/05-taipei-tm/taipei-tm-assistant/agents/openai.yaml
 9e27b5c8263e9e64389006853e35fabf90e57b5c10105b4aa86278c0b4cc50d1  ./skills/05-taipei-tm/taipei-tm-assistant/assets/evals/evals.json
 bb3414a01edeca9df757c41f34f2bf8b6d4b391e413553b439d1756914a6374e  ./skills/05-taipei-tm/taipei-tm-assistant/assets/evals/regression_gates.json
@@ -416,7 +416,7 @@ bb3414a01edeca9df757c41f34f2bf8b6d4b391e413553b439d1756914a6374e  ./skills/05-ta
 348c7e0b24a483927617c4c6761b8ac975e89fd25a4f24d517ed1c9950538fdc  ./skills/05-taipei-tm/taipei-tm-assistant/references/fusion-playbook.md
 d9b871aa6aeb435e341a9130b2d7fbf6acfb664dc4a1f6ec12f5b76e0dbb8230  ./skills/05-taipei-tm/taipei-tm-assistant/references/migration-governance.md
 840ecece1a806a4961a28846f6d4c50ef77726c03d42c09e5d75583c11206322  ./skills/05-taipei-tm/taipei-tm-assistant/references/migration-template.md
-23ee0e64da6cf10e6b386c8468442974eb7a3d8e98dfda072f6d537682c90d84  ./skills/05-taipei-tm/taipei-tm-assistant/references/readiness_report.md
+bc4dec2f8a23f6cbd281dff3705f5f90eb1f8348da64bb409f7aeb16957be20d  ./skills/05-taipei-tm/taipei-tm-assistant/references/readiness_report.md
 3f6bde8a93b2f5a2870e9195c7641b1e6a268c100dec4cbe4df12dd83d5fed2b  ./skills/05-taipei-tm/taipei-tm-assistant/references/retirement-playbook.md
 02e9d4dea030e4a19fcc510e43edcb67e492471b72d8b19f2895f2d9a1c66aaa  ./skills/05-taipei-tm/taipei-tm-assistant/references/telemetry-playbook.md
 b35ff9d7291e4709978b826b4ad1656e6999a1b6cd0bacabc40e099ce0afc756  ./skills/05-taipei-tm/taipei-tm-assistant/schemas/lifecycle.schema.json
@@ -445,8 +445,8 @@ b35ff9d7291e4709978b826b4ad1656e6999a1b6cd0bacabc40e099ce0afc756  ./skills/05-ta
 95183956de84a0cfcef9c39ddfe7b8b88d0df252b63d74783c8a2dc20b59cd37  ./skills/05-taipei-tm/taipei-tm-chair-coach/schemas/run_trace.schema.json
 7322fc3289212017d48812eb5f989aeb1b437f2ed7555ce11d9a49ad99105ecb  ./skills/05-taipei-tm/taipei-tm-chair-coach/schemas/skill_spec.schema.json
 cf8418a4c65dd0fad3cad0b1f820bf4b5a9d90ebf760e75d3ad290583630024a  ./skills/05-taipei-tm/taipei-tm-chair-coach/skill_lifecycle.yaml
-a6356537cfba393f704b1b3ad63a1d20165b6dad6c5e6560d52fe022c573bdd8  ./skills/05-taipei-tm/taipei-tm-evaluator-coach/README.md
-6145da2d554d204e28470b5d1bce49daeba2c4ae0240f0ce5e09051534427067  ./skills/05-taipei-tm/taipei-tm-evaluator-coach/SKILL.md
+1c19031ab35aafaab77c052025335575768ac0bfa35464a5561861de11e6b040  ./skills/05-taipei-tm/taipei-tm-evaluator-coach/README.md
+201c2e72a778709875863ae1f1789d89ac0327ce26c5677876372f7969314752  ./skills/05-taipei-tm/taipei-tm-evaluator-coach/SKILL.md
 df83e9dba74983e4344ed8e9692e2f4de06e5be376c20480f4ccc2c3bf5ca313  ./skills/05-taipei-tm/taipei-tm-evaluator-coach/agents/openai.yaml
 90ff3b1bd141ac938906e0911fb5c9d643071ebe2106fc7a6369cf92e8070889  ./skills/05-taipei-tm/taipei-tm-evaluator-coach/assets/evals/evals.json
 bb3414a01edeca9df757c41f34f2bf8b6d4b391e413553b439d1756914a6374e  ./skills/05-taipei-tm/taipei-tm-evaluator-coach/assets/evals/regression_gates.json
@@ -458,7 +458,7 @@ bb3414a01edeca9df757c41f34f2bf8b6d4b391e413553b439d1756914a6374e  ./skills/05-ta
 348c7e0b24a483927617c4c6761b8ac975e89fd25a4f24d517ed1c9950538fdc  ./skills/05-taipei-tm/taipei-tm-evaluator-coach/references/fusion-playbook.md
 d9b871aa6aeb435e341a9130b2d7fbf6acfb664dc4a1f6ec12f5b76e0dbb8230  ./skills/05-taipei-tm/taipei-tm-evaluator-coach/references/migration-governance.md
 840ecece1a806a4961a28846f6d4c50ef77726c03d42c09e5d75583c11206322  ./skills/05-taipei-tm/taipei-tm-evaluator-coach/references/migration-template.md
-bd123872dc8e78999ab395853a77cf038900880b12b1988e676c193e974953c1  ./skills/05-taipei-tm/taipei-tm-evaluator-coach/references/readiness_report.md
+eb79dd2daeac7f4d0774ee75c3fef8ecc38f61afd19dac4792d26776c1417ecd  ./skills/05-taipei-tm/taipei-tm-evaluator-coach/references/readiness_report.md
 3f6bde8a93b2f5a2870e9195c7641b1e6a268c100dec4cbe4df12dd83d5fed2b  ./skills/05-taipei-tm/taipei-tm-evaluator-coach/references/retirement-playbook.md
 02e9d4dea030e4a19fcc510e43edcb67e492471b72d8b19f2895f2d9a1c66aaa  ./skills/05-taipei-tm/taipei-tm-evaluator-coach/references/telemetry-playbook.md
 b35ff9d7291e4709978b826b4ad1656e6999a1b6cd0bacabc40e099ce0afc756  ./skills/05-taipei-tm/taipei-tm-evaluator-coach/schemas/lifecycle.schema.json
@@ -487,8 +487,8 @@ b35ff9d7291e4709978b826b4ad1656e6999a1b6cd0bacabc40e099ce0afc756  ./skills/05-ta
 95183956de84a0cfcef9c39ddfe7b8b88d0df252b63d74783c8a2dc20b59cd37  ./skills/05-taipei-tm/taipei-tm-general-evaluator/schemas/run_trace.schema.json
 7322fc3289212017d48812eb5f989aeb1b437f2ed7555ce11d9a49ad99105ecb  ./skills/05-taipei-tm/taipei-tm-general-evaluator/schemas/skill_spec.schema.json
 e6b66fdddb5c4a236ee14c9c121ab323436f707c8e7d19fef1279e9bed8c67e0  ./skills/05-taipei-tm/taipei-tm-general-evaluator/skill_lifecycle.yaml
-e7ca070781177df53aa7ee78522e9b8d3949eaeea3cfe6710ec1f5737aff6a3e  ./skills/05-taipei-tm/taipei-tm-speaker-coach/README.md
-6a5f1cae5a5d15bf2fe8fccf3610467aa0a6a8d1c3f689c82ec9c6e1bae26b18  ./skills/05-taipei-tm/taipei-tm-speaker-coach/SKILL.md
+f6f9d7e57502e8baa052cb7c20cf462f47a881a2c397799a75b1970f0c887cfc  ./skills/05-taipei-tm/taipei-tm-speaker-coach/README.md
+22208a5d75b83237807561433c09ddc8440c72915e1c0834ef92600bb2e6c33d  ./skills/05-taipei-tm/taipei-tm-speaker-coach/SKILL.md
 069b01fa9823cfc76fcc5cc9d141553870f0d8779442f5f507c2180f9007a846  ./skills/05-taipei-tm/taipei-tm-speaker-coach/agents/openai.yaml
 16847a02c83bb1091c5595a5cad6626bd41ad8036518aeba95e9b45194568681  ./skills/05-taipei-tm/taipei-tm-speaker-coach/assets/evals/evals.json
 bb3414a01edeca9df757c41f34f2bf8b6d4b391e413553b439d1756914a6374e  ./skills/05-taipei-tm/taipei-tm-speaker-coach/assets/evals/regression_gates.json
@@ -500,7 +500,7 @@ bb3414a01edeca9df757c41f34f2bf8b6d4b391e413553b439d1756914a6374e  ./skills/05-ta
 348c7e0b24a483927617c4c6761b8ac975e89fd25a4f24d517ed1c9950538fdc  ./skills/05-taipei-tm/taipei-tm-speaker-coach/references/fusion-playbook.md
 d9b871aa6aeb435e341a9130b2d7fbf6acfb664dc4a1f6ec12f5b76e0dbb8230  ./skills/05-taipei-tm/taipei-tm-speaker-coach/references/migration-governance.md
 840ecece1a806a4961a28846f6d4c50ef77726c03d42c09e5d75583c11206322  ./skills/05-taipei-tm/taipei-tm-speaker-coach/references/migration-template.md
-92e5d6e17d8597baeaea2e0fed919eef2e317f803cc247be8febf39b6b4994b9  ./skills/05-taipei-tm/taipei-tm-speaker-coach/references/readiness_report.md
+109f3359efdf9f9dd18147bc5eb3be6248957f1f7cd0179e5a9d1ba22228d7d7  ./skills/05-taipei-tm/taipei-tm-speaker-coach/references/readiness_report.md
 3f6bde8a93b2f5a2870e9195c7641b1e6a268c100dec4cbe4df12dd83d5fed2b  ./skills/05-taipei-tm/taipei-tm-speaker-coach/references/retirement-playbook.md
 02e9d4dea030e4a19fcc510e43edcb67e492471b72d8b19f2895f2d9a1c66aaa  ./skills/05-taipei-tm/taipei-tm-speaker-coach/references/telemetry-playbook.md
 b35ff9d7291e4709978b826b4ad1656e6999a1b6cd0bacabc40e099ce0afc756  ./skills/05-taipei-tm/taipei-tm-speaker-coach/schemas/lifecycle.schema.json

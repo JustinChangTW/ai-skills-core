@@ -6,7 +6,7 @@
 
 - Skill ID：`taipei-tm-assistant`
 - 分類：`05-taipei-tm`
-- 版本：`2026.8.16`
+- 版本：`2026.8.22`
 - 主要指令：[SKILL.md](SKILL.md)
 
 ## 使用時機

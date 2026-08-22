@@ -1,17 +1,17 @@
 # 台北市健言社 TM 三分鐘講員教練
 
-為台北市健言社TM講員準備三分鐘演講。Use when 使用者要解題、撰稿或練習不帶稿。This skill only owns speaker preparation. Do not use when 使用者擔任講評、總評、主席或計時，也不適用國際Toastmasters Table Topics。成功結果是符合社規且講員能自然說出的演講。
+為台北市健言社TM講員準備三分鐘演講，涵蓋題目關鍵詞、形意功用聯想、真實故事撰稿、十秒內破題、行動呼籲、分段字數及不帶稿訓練。Use when 使用者要解題、撰稿或練習不帶稿。Do not use when 使用者擔任講評、總評、主席或計時，也不適用國際Toastmasters Table Topics。成功結果是符合社規且講員能自然說出的演講。
 
 ## 基本資料
 
 - Skill ID：`taipei-tm-speaker-coach`
 - 分類：`05-taipei-tm`
-- 版本：`2026.8.16`
+- 版本：`2026.8.22`
 - 主要指令：[SKILL.md](SKILL.md)
 
 ## 使用時機
 
-- 適合：使用者要解題、撰稿或練習不帶稿。This skill only owns speaker preparation.
+- 適合：使用者要解題、撰稿或練習不帶稿
 - 不適合：when 使用者擔任講評、總評、主席或計時，也不適用國際Toastmasters Table Topics
 - 預期成果：符合社規且講員能自然說出的演講
 
