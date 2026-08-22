@@ -1,0 +1,13 @@
+interface:
+  display_name: TED 風格演講教練
+  short_description: 從核心觀點到故事、逐字稿與舞台排練
+  default_prompt: 使用 $ted-style-speech-coach 幫我把主題發展成一場可上台的觀點型演講。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
