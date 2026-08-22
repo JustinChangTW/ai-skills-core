@@ -171,7 +171,7 @@ bbd3461f11b47d33291e0fd26867dc03e2bf11a1d08ab6a2db981163e7d41f93  ./skills/01-sk
 825ea8e8bf7f93354804d0cb7cf0c58dde54c83826649c5d466d5264e5b70d05  ./skills/01-skill-management/skill-vault/policies/retirement_policy.yaml
 c4858d050759eb18d605030c2a9e57e35c6b843aae5f8152342f6709b3c5a3f2  ./skills/01-skill-management/skill-vault/references/backup-policy.md
 9eb50adc6d54030d523d1d2962021bbb9346812d730ae7d1443c90335b529002  ./skills/01-skill-management/skill-vault/references/migration-governance.md
-0176b430eab6b4431ddad4adc1fa53358f3ce8b35862325b4a317af220218c04  ./skills/01-skill-management/skill-vault/references/readiness_report.md
+cc14d2b173fc079ed2ff44293feeebbf28daca786c1a2dda25328095591398a0  ./skills/01-skill-management/skill-vault/references/readiness_report.md
 b35ff9d7291e4709978b826b4ad1656e6999a1b6cd0bacabc40e099ce0afc756  ./skills/01-skill-management/skill-vault/schemas/lifecycle.schema.json
 2fad02760fdf2bab4b18c5630f908124990a16365be9c89028081bd92b44fcc3  ./skills/01-skill-management/skill-vault/schemas/release_evidence.schema.json
 95183956de84a0cfcef9c39ddfe7b8b88d0df252b63d74783c8a2dc20b59cd37  ./skills/01-skill-management/skill-vault/schemas/run_trace.schema.json

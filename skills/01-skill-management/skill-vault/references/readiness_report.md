@@ -19,14 +19,14 @@
 - Eval quality: PASS
 - Lifecycle state: PASS
 - Reference audit: PASS
-- Backup auditor functional test against `ai-skills-core`: PASS with 10 categories, 56 Skills and 849 files before adding this Skill.
+- Backup auditor functional test against `ai-skills-core`: PASS before and after adding this Skill.
 - Draft release gate: PASS.
 - Create stage gate: PASS.
+- First live backup: PASS; `skill-vault` was added as the 57th Skill under `01-skill-management`.
+- Remote verification: PASS at commit `b4c1709b923aa7ff3c3f5fc830f71720822e8ff3`; catalog, category README, SKILL.md, backup policy, audit script and checksum manifest were read back successfully.
 
 ## Pending release evidence
 
-- Run the backup auditor again after this Skill is added to the backup repository.
-- Verify the new Skill from the resulting GitHub commit.
 - No live model benchmark was run; therefore no claim is made about routing accuracy, speed, token savings or cross-host performance.
 
 ## Manual review
