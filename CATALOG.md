@@ -31,6 +31,7 @@
 - `oral-expression-coach`：會議、報告、面試、即席與台風訓練。
 - `ethical-persuasion-strategy`：有倫理護欄的說服與反對點策略。
 - `manipulation-rhetoric-decoder`：巴納姆效應、操弄話術與謬誤破解。
+- `ted-style-speech-coach`：TED 風格觀點演講、逐字稿診斷與舞台排練。
 
 ## 05 台北市健言社
 
