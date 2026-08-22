@@ -17,7 +17,7 @@ copy_skill() {
 }
 
 # 新 Skill 加入時，請依主要工作成果加入下列對應分類。
-for s in allanyiin-skill-creator-advanced allanyiin-skill-evolution allanyiin-skill-optimizer capability-evolver; do copy_skill 01-skill-management "$s"; done
+for s in allanyiin-skill-creator-advanced allanyiin-skill-evolution allanyiin-skill-optimizer capability-evolver skill-vault; do copy_skill 01-skill-management "$s"; done
 for s in dark-web-intelligence-analysis malware-research-analysis secure-code-review taiwan-isms-audit-expert taiwan-financial-intelligence-radar; do copy_skill 02-cybersecurity "$s"; done
 for s in arxiv-research deep-research-writing expert-method-distiller knowledge-method-distiller longdoc-evidence-reader textbook-to-md textbook-figure-remap; do copy_skill 03-research-knowledge "$s"; done
 for s in oral-expression-coach ethical-persuasion-strategy manipulation-rhetoric-decoder; do copy_skill 04-speaking-communication "$s"; done

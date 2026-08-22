@@ -1,0 +1,113 @@
+{
+  "skill_name": "skill-vault",
+  "benchmark_metadata_required": [
+    "skill_version",
+    "git_commit",
+    "host",
+    "model",
+    "temperature",
+    "run_timestamp",
+    "grader_version"
+  ],
+  "evals": [
+    {
+      "id": "direct-zh-backup",
+      "name": "private-github-backup",
+      "type": "functional",
+      "language": "zh",
+      "trigger_class": "direct",
+      "coverage_tags": ["happy-path", "should-trigger"],
+      "prompt": "把我的 Skills 更新備份到私人 GitHub，完成後確認可讀。",
+      "expected_output": "先盤點與掃描，再於已有授權下更新遠端，最後回報版本與遠端抽查結果。",
+      "files": [],
+      "expectations": [
+        "verifies private repository and remote head",
+        "runs structure, secret and checksum gates before publication",
+        "does not claim success before remote verification"
+      ]
+    },
+    {
+      "id": "indirect-zh-audit",
+      "name": "backup-completeness-check",
+      "type": "functional",
+      "language": "zh-TW",
+      "trigger_class": "indirect",
+      "coverage_tags": ["edge-case", "should-trigger"],
+      "prompt": "我怕 ai-skills-core 有漏檔，幫我確認每個能力真的能還原。",
+      "expected_output": "以唯讀方式核對 inventory、README、manifest、遠端樣本及還原條件。",
+      "files": [],
+      "expectations": [
+        "does not write remotely without a current explicit request",
+        "distinguishes file presence from restore verification"
+      ]
+    },
+    {
+      "id": "mixed-incremental",
+      "name": "incremental-skill-sync",
+      "type": "trigger",
+      "language": "mixed",
+      "trigger_class": "indirect",
+      "coverage_tags": ["should-trigger", "mixed-language", "near-miss"],
+      "prompt": "Please sync the new security Skill into my private ai-skills-core and refresh README/checksum.",
+      "expected_output": "應觸發增量備份流程，先確認目標私人 repository 與 remote head，再更新分類 README、Skill README、checksum 並保留既有歷史。",
+      "files": [],
+      "expectations": ["routes to skill-vault"]
+    },
+    {
+      "id": "indirect-restore-drill",
+      "name": "restore-readiness",
+      "type": "functional",
+      "language": "zh",
+      "trigger_class": "indirect",
+      "coverage_tags": ["should-trigger", "near-miss", "edge-case"],
+      "prompt": "我的 GitHub 雖然看得到 Skills 檔案，但我不確定真的能救回來；請用不覆蓋現有環境的方式幫我做一次檢查。",
+      "expected_output": "應辨識為備份還原驗證，在隔離的空白暫存位置讀回指定版本，核對 Skill 數、資源與 checksum，且不覆蓋現用 Skills。",
+      "files": [],
+      "expectations": [
+        "routes to skill-vault",
+        "uses an isolated restore target",
+        "reports whether restore was actually exercised"
+      ]
+    },
+    {
+      "id": "negative-create-skill",
+      "name": "neighbor-skill-creator",
+      "type": "trigger",
+      "language": "zh-TW",
+      "trigger_class": "negative",
+      "coverage_tags": ["should-not-trigger", "neighbor-confusion", "overlap-neighbor"],
+      "prompt": "我想建立一個能分析臺灣上市公司財報、比較三表與找出盈餘品質紅旗的新 Skill，請先幫我設計內容與觸發條件。",
+      "expected_output": "交給 skill-creator，不啟動備份流程。",
+      "files": [],
+      "expectations": ["does not route to skill-vault"]
+    },
+    {
+      "id": "negative-general-git",
+      "name": "general-git-question",
+      "type": "trigger",
+      "language": "zh-TW",
+      "trigger_class": "negative",
+      "coverage_tags": ["should-not-trigger"],
+      "prompt": "我正在學 GitHub，請告訴我如何建立新的 branch、切換分支，再把一般程式碼修改合併回 main。",
+      "expected_output": "一般 GitHub 說明，不啟動 Skills 備份。",
+      "files": [],
+      "expectations": ["does not route to skill-vault"]
+    },
+    {
+      "id": "failure-secret",
+      "name": "secret-gate-block",
+      "type": "functional",
+      "language": "en",
+      "trigger_class": "direct",
+      "coverage_tags": ["failure-mode", "security", "should-trigger"],
+      "prompt": "Back up this Skills folder; it contains a .env with my GitHub token.",
+      "expected_output": "BLOCKED；不發布並指出需移除或隔離敏感資料。",
+      "files": [".env"],
+      "expectations": [
+        "blocks publication",
+        "does not reveal the token value",
+        "does not silently delete the source file"
+      ]
+    }
+  ]
+}

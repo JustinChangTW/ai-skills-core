@@ -6,6 +6,7 @@
 - `allanyiin-skill-evolution`：把失敗與人工修正轉成 Skill 演進證據。
 - `allanyiin-skill-optimizer`：以 benchmark 與 held-out eval 優化 Skill。
 - `capability-evolver`：依任務尋找、比較與安全安裝合適 Skill。
+- `skill-vault`：Skills 私人 GitHub 備份、驗證與還原管家。
 
 ## 02 資訊安全
 

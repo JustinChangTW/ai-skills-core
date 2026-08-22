@@ -1,0 +1,47 @@
+name: skill-vault
+status: validated
+owner: Justin Chang
+archetype: ops
+primary_structure_pattern: pipeline
+lifecycle:
+  created_at: 2026-08-22
+  last_validated_at: 2026-08-22
+  last_released_at: null
+  review_interval_days: 90
+  next_review_due: 2026-11-20
+support:
+  primary_hosts:
+    - codex
+    - chatgpt-with-github
+  secondary_hosts:
+    - agent-skills
+  unsupported_hosts:
+    - hosts-without-filesystem-or-github-write-tools
+risk:
+  external_side_effects: true
+  requires_secrets: false
+  data_sensitivity: medium
+dependencies:
+  scripts:
+    - scripts/audit_backup.py
+  references:
+    - references/backup-policy.md
+    - references/readiness_report.md
+stewardship:
+  reviewers:
+    - Justin Chang
+  stale_after_days: 180
+  escalation:
+    stale: needs-maintenance
+    no_owner: orphaned
+portfolio:
+  overlaps_with:
+    - skill-creator
+    - capability-evolver
+  hands_off_to:
+    - skill-creator
+    - capability-evolver
+  depends_on: []
+  supersedes: []
+  deprecated_by: null
+  shares_tool_contract_with: []
