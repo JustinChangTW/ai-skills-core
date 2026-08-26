@@ -8,7 +8,7 @@
 |---|---|---|
 | `01-skill-management` | Skill 搜尋、建立、優化與演進 | 能力進化器、Skill Creator、Optimizer |
 | `02-cybersecurity` | 資安稽核、程式安全、惡意程式與威脅情資 | 臺灣 ISMS、Secure Code Review、暗網情資 |
-| `03-research-knowledge` | 深度研究、論文、長文件與知識蒸餾 | arXiv、研究寫作、知識蒸餾 |
+| `03-research-knowledge` | 深度研究、論文、長文件與知識編譯 | arXiv、研究寫作、知識能力編譯器 |
 | `04-speaking-communication` | 一般口語、觀點演講、說服與話術辨識 | 口語表達教練、TED 風格演講、倫理說服 |
 | `05-taipei-tm` | 台北市健言社 TM 專用角色 | 講員、講評、總評、主席、計時 |
 | `06-writing-editing` | 寫作、自然化、技術文件與包容性編修 | Humanizer、長文、技術文件 |
