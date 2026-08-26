@@ -1,0 +1,13 @@
+interface:
+  display_name: 知識能力編譯器
+  short_description: 把書籍、文件與研究編譯成可追溯的私人 Skill
+  default_prompt: 使用 $knowledge-skill-compiler 評估並把我合法提供的資料編譯成可按需載入的私人 Skill。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
