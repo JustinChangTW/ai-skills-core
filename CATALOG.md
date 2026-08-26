@@ -22,6 +22,7 @@
 - `deep-research-writing`：不限領域的跨來源深度研究。
 - `expert-method-distiller`：蒸餾本人、獲同意專家或公眾人物的方法。
 - `knowledge-method-distiller`：從合法提供的書籍或課程蒸餾方法。
+- `knowledge-skill-compiler`：把合法知識編譯成可追溯、可按需載入及增量更新的私人 Skill。
 - `longdoc-evidence-reader`：長 PDF、規格與大型程式庫的證據回收。
 - `textbook-to-md`：將教材轉成可搜尋 Markdown。
 - `textbook-figure-remap`：教材圖片擷取與定位。
