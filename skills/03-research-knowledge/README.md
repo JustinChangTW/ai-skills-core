@@ -2,7 +2,7 @@
 
 進行不限領域的資料蒐集、論文研究、長文件閱讀與方法蒸餾。
 
-本分類目前收錄 **7 個 Skills**。若任務跨越多個分類，先依主要交付成果選擇 Skill，再視需要交接其他能力。
+本分類目前收錄 **8 個 Skills**。若任務跨越多個分類，先依主要交付成果選擇 Skill，再視需要交接其他能力。
 
 ## Skills 清單
 
@@ -12,6 +12,7 @@
 | [`deep-research-writing`](deep-research-writing/README.md) | 深度研究與證據寫作 | 執行不限領域的跨來源深度研究，主要工作只有把分散證據整合成可追溯的研究成品 |
 | [`expert-method-distiller`](expert-method-distiller/README.md) | 專家方法蒸餾器 | 從本人、已同意的專家或公眾人物之可靠材料，蒸餾可追溯的工作方法 |
 | [`knowledge-method-distiller`](knowledge-method-distiller/README.md) | 知識方法蒸餾器 | 從合法提供的長篇知識來源蒸餾可追溯、可執行的候選方法 |
+| [`knowledge-skill-compiler`](knowledge-skill-compiler/README.md) | 知識能力編譯器 | 將使用者合法提供的書籍、文件、研究資料夾或既有筆記，編譯成可按需載入、可追溯、可增量更新的私人 Agent Skill |
 | [`longdoc-evidence-reader`](longdoc-evidence-reader/README.md) | 長文件證據閱讀器 | 在使用者要閱讀超長 PDF、規格文件或大型程式碼庫並回收證據時使用 |
 | [`textbook-figure-remap`](textbook-figure-remap/README.md) | Figure Remap | > |
 | [`textbook-to-md`](textbook-to-md/README.md) | Textbook-to-Markdown Converter | > |
