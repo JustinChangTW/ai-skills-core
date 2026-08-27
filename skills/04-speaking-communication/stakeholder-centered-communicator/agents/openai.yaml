@@ -1,0 +1,13 @@
+interface:
+  display_name: 關注點溝通助手
+  short_description: 依關係、情境與對話線索，設計自然、尊重且互惠的溝通方式
+  default_prompt: 使用 $stakeholder-centered-communicator 分析對方在意什麼，並幫我設計自然的回覆。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
