@@ -17,6 +17,7 @@
 | `09-software-problem-solving` | 軟體設計、需求、問題拆解與 MCP | 前端、Spec、Vibe Coding、MCP 診斷 |
 | `10-video-media` | 剪輯、字幕、短影音、旅遊與教學影片 | Video Editor、Short、Subtitle |
 | `11-learning-exams` | 證照考試、題目拆解、記憶與複習 | 證照英文小老師 |
+| `12-governance-policy` | 政府預算、政策、議事程序與公共事實查核 | 臺灣政府預算查核員 |
 
 完整清單見 [CATALOG.md](CATALOG.md)，檔案完整性見 [SHA256SUMS.txt](SHA256SUMS.txt)。
 
