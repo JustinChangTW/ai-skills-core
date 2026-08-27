@@ -21,7 +21,7 @@ description: 診斷並訓練繁體中文口語表達，涵蓋即席回答、會�
 
 - 選擇 PREP、STAR、金字塔、SCQA、教學說明或問答結構：讀 `references/speaking-frameworks.md`。
 - 分析錄音、影片、逐字稿、贅詞、聲音與台風：讀 `references/diagnosis-rubric.md`。
-- 處理會議、主管報告、面試、自我介紹、衝突或即席情境：讀 `references/scenario-playbooks.md`。
+- 處理會議、教授週會、主管進度報告、面試、自我介紹、衝突或即席情境：讀 `references/scenario-playbooks.md`。
 - 設計每日練習、角色扮演、追問與進步追蹤：讀 `references/practice-loop.md`。
 - 需要標準診斷、回答或訓練計畫格式：讀 `references/output-templates.md`。
 - 維護或調整 Skill 邊界時：讀 `references/migration-governance.md` 與 `references/readiness_report.md`。
