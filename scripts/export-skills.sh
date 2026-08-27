@@ -20,7 +20,7 @@ copy_skill() {
 for s in allanyiin-skill-creator-advanced allanyiin-skill-evolution allanyiin-skill-optimizer capability-evolver skill-vault; do copy_skill 01-skill-management "$s"; done
 for s in dark-web-intelligence-analysis malware-research-analysis secure-code-review taiwan-isms-audit-expert taiwan-financial-intelligence-radar; do copy_skill 02-cybersecurity "$s"; done
 for s in arxiv-research deep-research-writing expert-method-distiller knowledge-method-distiller knowledge-skill-compiler longdoc-evidence-reader textbook-to-md textbook-figure-remap; do copy_skill 03-research-knowledge "$s"; done
-for s in oral-expression-coach ethical-persuasion-strategy manipulation-rhetoric-decoder ted-style-speech-coach; do copy_skill 04-speaking-communication "$s"; done
+for s in oral-expression-coach ethical-persuasion-strategy manipulation-rhetoric-decoder stakeholder-centered-communicator ted-style-speech-coach; do copy_skill 04-speaking-communication "$s"; done
 for s in barnum-speech taipei-tm-assistant taipei-tm-chair-coach taipei-tm-evaluator-coach taipei-tm-general-evaluator taipei-tm-speaker-coach taipei-tm-timer-ops; do copy_skill 05-taipei-tm "$s"; done
 for s in humanize-text harm-aware-editor longform-writing-process markdown-plus-author technical-documentation-writer; do copy_skill 06-writing-editing "$s"; done
 for s in humanize-presentation-visuals slide-content-planner pptx-maker visual-presentation-production mermaid-diagram visual-line-sticker-production blender-control; do copy_skill 07-presentations-visual "$s"; done
