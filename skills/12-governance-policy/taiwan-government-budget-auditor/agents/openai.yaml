@@ -1,0 +1,11 @@
+interface:
+  display_name: 臺灣政府預算查核員
+  short_description: 查核預算刪凍、三讀結果與實際影響
+  default_prompt: 使用 $taiwan-government-budget-auditor 查核這則預算主張，分清比較基準、刪除、凍結、程序結果與可證實影響。
+policy:
+  allow_implicit_invocation: true
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
