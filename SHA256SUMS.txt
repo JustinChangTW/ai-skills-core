@@ -1,8 +1,8 @@
 a22c5d970104f6477635cd6478b4ea915b99963962320bc5bae319dc4aa9e4b3  ./.gitignore
-5b2f4939fbe9c70521e615291a1ebd79eda67a7fdf1893eeda609ad782dd683d  ./CATALOG.md
-bde6eb0465d9f1a1492b6297155e309996f3d70a668f8a39ecd0c0a7b85fef94  ./README.md
-6a58e8d1a3b470cacf0dc1418743426b0455cd488117751eb28280c54d7cb62b  ./scripts/export-skills.sh
-6e7403fc63fd45d7f235e688c39729044e69dbbf670fdfcdbc8c4ff7e2b276fb  ./scripts/generate-skill-readmes.py
+2aebb8929617d20c694dd12e70876c7b431eff373e63e561c161ea5b8805ef9d  ./CATALOG.md
+78d6c6532d3353619dd1dd4142371c236db2bd913fb3773083bed668f893abdd  ./README.md
+e18352b7c48ab3a12dea9a69d1e8b5e72442446ede3ce8dc8ecd2c0b53044c88  ./scripts/export-skills.sh
+b26dca4f5bfce59d41595ce58095004af990bea4edc3ad0f9e001d501bc0bee0  ./scripts/generate-skill-readmes.py
 4af0b25c4dbfa64786758dddb4a206dbd5c7a715676d7914469353dd60230b13  ./scripts/validate-backup.sh
 a5ed8838e3b7a1e526d617cda3f971ac3561d66bd86d1d8832dfc9d082d56687  ./skills/01-skill-management/README.md
 1cada71d5ccee9972dc17947b296b9fcac92ae2e37ac516fb217166cb64281c6  ./skills/01-skill-management/allanyiin-skill-creator-advanced/.clawhubignore
@@ -917,3 +917,11 @@ b35ff9d7291e4709978b826b4ad1656e6999a1b6cd0bacabc40e099ce0afc756  ./skills/11-le
 95183956de84a0cfcef9c39ddfe7b8b88d0df252b63d74783c8a2dc20b59cd37  ./skills/11-learning-exams/cert-english-coach/schemas/run_trace.schema.json
 7322fc3289212017d48812eb5f989aeb1b437f2ed7555ce11d9a49ad99105ecb  ./skills/11-learning-exams/cert-english-coach/schemas/skill_spec.schema.json
 3388e70161a4e930d626cfbc7862f8c39cd404d070459d9b99010b645fa609bb  ./skills/11-learning-exams/cert-english-coach/skill_lifecycle.yaml
+33b48288f95dafe22f413baee47c95ed09d1c2b17c46fa96e62a2c369576cee2  ./skills/12-governance-policy/README.md
+359e7235c17f4814f04c41a9449d0f6b3cd3c470164858c32f8b54fb123870c1  ./skills/12-governance-policy/taiwan-government-budget-auditor/README.md
+d69c9e5b3ec9c5d2e32f72b9ba7eda2b4956c6c96490b5da84753c1871c3fba6  ./skills/12-governance-policy/taiwan-government-budget-auditor/SKILL.md
+3cfd4eb0086f204d9e5d892e21f0748cce61cec8a2f76c010ccb7e1b4f84814d  ./skills/12-governance-policy/taiwan-government-budget-auditor/agents/openai.yaml
+0baeec5b508f170635ba8599f7f7c2989134efb1f1da931f3f134802a13f14be  ./skills/12-governance-policy/taiwan-government-budget-auditor/assets/icon.svg
+2bc232d2205b73ceb9e1c73d115754afd88a0aed5d83a8c056ddd7c9aaa892d9  ./skills/12-governance-policy/taiwan-government-budget-auditor/references/impact-analysis.md
+fc4dabc877b7e10c1a8a54c4d6cf4411af01b38cc0a9bc3217c931a7cd1a00f0  ./skills/12-governance-policy/taiwan-government-budget-auditor/references/report-template.md
+75a5d54ae22e918d57b39e04979c31f51a4693a3def5169b5684c8e4f64eb1b9  ./skills/12-governance-policy/taiwan-government-budget-auditor/references/taiwan-budget-sources.md
