@@ -1,7 +1,7 @@
 a22c5d970104f6477635cd6478b4ea915b99963962320bc5bae319dc4aa9e4b3  ./.gitignore
-2aebb8929617d20c694dd12e70876c7b431eff373e63e561c161ea5b8805ef9d  ./CATALOG.md
+b34d0933bedd3a9ff13e57d6b10a734680e702952725c5bda39dd9e6e5fe277a  ./CATALOG.md
 78d6c6532d3353619dd1dd4142371c236db2bd913fb3773083bed668f893abdd  ./README.md
-e18352b7c48ab3a12dea9a69d1e8b5e72442446ede3ce8dc8ecd2c0b53044c88  ./scripts/export-skills.sh
+c19b41f4b6fd944b6426113d77b8f14937dd1fd5f5e8d228e60a89c1408d6c50  ./scripts/export-skills.sh
 b26dca4f5bfce59d41595ce58095004af990bea4edc3ad0f9e001d501bc0bee0  ./scripts/generate-skill-readmes.py
 4af0b25c4dbfa64786758dddb4a206dbd5c7a715676d7914469353dd60230b13  ./scripts/validate-backup.sh
 a5ed8838e3b7a1e526d617cda3f971ac3561d66bd86d1d8832dfc9d082d56687  ./skills/01-skill-management/README.md
@@ -380,7 +380,7 @@ aace341316e30dcd7caf88c11508fbd4ef3c02c93d2fa77e05aa2e87dc85a757  ./skills/03-re
 b558726eb6b7e60f6c86ca9cfae4b8ab0174aa4784133b3fa3b45211090f5176  ./skills/03-research-knowledge/textbook-to-md/scripts/project/converter/test_table_fixes.py
 97936697d11771fba6585fa257a18e88c897b7dc51ce12dcc7218e9627c887f3  ./skills/03-research-knowledge/textbook-to-md/scripts/project/converter/test_table_merge.py
 5df21bd64af4b205abbccc08d915406ca6413041e5469fd6842b58b7be6809e5  ./skills/03-research-knowledge/textbook-to-md/scripts/project/shared/config.py
-ef321ddd7b43c3e8b815861fe49b35080a76c0414446231bf0688ac0216285b7  ./skills/04-speaking-communication/README.md
+6de5b8c520acada2acef37e4625e459b9bded68900b955818db96b3a30d79e30  ./skills/04-speaking-communication/README.md
 eea3766777bf9540570caa041f0b7be6550b511ae7a75e98b624db66df40edc8  ./skills/04-speaking-communication/ethical-persuasion-strategy/README.md
 2dd18ca52f448bb9da130043fdcc515a9b09cd82cc3c59437dcb71a20c2ffa66  ./skills/04-speaking-communication/ethical-persuasion-strategy/SKILL.md
 a8a6dbd48b1d289a2aa301c43d803f7a5f4bcc1854d627a7aa93cce9527db6ee  ./skills/04-speaking-communication/ethical-persuasion-strategy/agents/openai.yaml
@@ -406,7 +406,7 @@ a39036c19828b3a418274a7cdf4e0c485015ec0a0eb3dfa4c8ccb6896afe6e19  ./skills/04-sp
 9b93711d2b9e49ef615d3b77035b7dca75ccba8d8eac452fc5a21a865a6e7092  ./skills/04-speaking-communication/manipulation-rhetoric-decoder/references/scenario-playbooks.md
 5c0db468453be3e61fba4281c7c3e92e1a7f765ae4ff1d2faa097f695c666181  ./skills/04-speaking-communication/manipulation-rhetoric-decoder/skill_lifecycle.yaml
 a431fc867ac5db135f339c9b173d3a04d92ab17226e60b6c8df5b537e2c697a8  ./skills/04-speaking-communication/oral-expression-coach/README.md
-2e1b28d958b9a83f359e6dfb2d4ddbe7d48fe4d639dbaa894a0280db6911af0d  ./skills/04-speaking-communication/oral-expression-coach/SKILL.md
+61cf150eed59da1dcab9dabbf4874658ad3bdb2247a18f32258ca870ea2de41c  ./skills/04-speaking-communication/oral-expression-coach/SKILL.md
 8078a7c6c29659be9e8274001a280ae742a3e6b8676a3afce4edeb5fbd4d51cd  ./skills/04-speaking-communication/oral-expression-coach/agents/openai.yaml
 8a36426bc8006f3107b7cd92abcb5c137398eef9b9a775a4c8dbc8ca395903c7  ./skills/04-speaking-communication/oral-expression-coach/assets/evals/evals.json
 9f94487b441861f166e6501933414657587d3ad2155b316ae72b20e5d2bc0fdf  ./skills/04-speaking-communication/oral-expression-coach/assets/evals/regression_gates.json
@@ -416,9 +416,13 @@ fc478400cd3bc3dca3b596a23a2f05f156626a74b85100f3b19a0c99e8a2d8b9  ./skills/04-sp
 17476597c422522bda60b52a2ddec5b8c70d528c11bc3896b6e74c2662b27429  ./skills/04-speaking-communication/oral-expression-coach/references/output-templates.md
 0bc82bbbf2fb0a054b57abc2271d4b45484c6ed6051f3f0472e9c6287dd2519e  ./skills/04-speaking-communication/oral-expression-coach/references/practice-loop.md
 ed3ec5aa1ba6f23a38838a7759564866c24bef5e214c37c3cc83bb70b3707e01  ./skills/04-speaking-communication/oral-expression-coach/references/readiness_report.md
-adc9b913572067271c6c0125a1d3484eead98b944bc75fba658a03c68edc6438  ./skills/04-speaking-communication/oral-expression-coach/references/scenario-playbooks.md
+ce941cdd52e6889b1f14caa840524ba93d9496f1433d691f3670ecd3f7b63ec4  ./skills/04-speaking-communication/oral-expression-coach/references/scenario-playbooks.md
 9ad7bf74a29443ba27e783add296d68123398d82dab02480e4ab71b7384db2da  ./skills/04-speaking-communication/oral-expression-coach/references/speaking-frameworks.md
 dddce4b3d62591215cffdff6b708225174bba82d29143c2009ff0edc89a96c69  ./skills/04-speaking-communication/oral-expression-coach/skill_lifecycle.yaml
+a2879101c9dab8c2f9beff7e93b36062b6ed0db0e35c665762eaaaeebf34223c  ./skills/04-speaking-communication/stakeholder-centered-communicator/README.md
+a0261d355653b087c15f8575233fd961be587a606a3e28a69617f9b792571d87  ./skills/04-speaking-communication/stakeholder-centered-communicator/SKILL.md
+aed01adcbb97ebee50ef9b98b8ee116871ae60f5b61ada8cc523c386dd6249b3  ./skills/04-speaking-communication/stakeholder-centered-communicator/agents/openai.yaml
+9be88f8dd4c5e658961515c71389eafd45142ffa68bcae58e8dcff57d178ed91  ./skills/04-speaking-communication/stakeholder-centered-communicator/assets/icon.svg
 e47fb41248958144ce9e174d6b314fa17bd3ebd213d1bb0ba2614c7cb3108777  ./skills/04-speaking-communication/ted-style-speech-coach/README.md
 53a958ba9cd8b2c91939246371bf6153fa67b456c46b27a2c7119d44f71a4e1c  ./skills/04-speaking-communication/ted-style-speech-coach/SKILL.md
 8779985f1b83677451d99c1ff7ac8e2c9e9198a5e8c80d5f998b190959f5b9da  ./skills/04-speaking-communication/ted-style-speech-coach/agents/openai.yaml
