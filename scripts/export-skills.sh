@@ -6,7 +6,7 @@ repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 copy_skill() {
   local category="$1" skill_name="$2" source_file source_dir target_dir
-  source_file="$(rg -l "^name: ${skill_name}$" "$skills_root"/skill-*/SKILL.md | head -1)"
+  source_file="$(rg -l "^name: ${skill_name}$" "$skills_root"/*/SKILL.md | head -1)"
   test -n "$source_file" || { echo "Skill not found: $skill_name" >&2; return 1; }
   source_dir="$(dirname "$source_file")"
   target_dir="$repo_root/skills/$category/$skill_name"
@@ -28,6 +28,7 @@ for s in financial-statement-analysis taiwan-hidden-champion-radar taiwan-home-b
 for s in alternative-solution-designer frontend-design mcp-http-diagnostics problem-decomposer spec-organizer vibe-coding-guidelines; do copy_skill 09-software-problem-solving "$s"; done
 for s in video-editing-setup video-editor video-presentation video-short video-short-editor video-social video-subtitle video-travel video-tutorial; do copy_skill 10-video-media "$s"; done
 for s in cert-english-coach; do copy_skill 11-learning-exams "$s"; done
+for s in taiwan-government-budget-auditor; do copy_skill 12-governance-policy "$s"; done
 
 python3 "$repo_root/scripts/generate-skill-readmes.py"
 "$repo_root/scripts/validate-backup.sh"
